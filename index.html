@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosef-Isroel Teitelbaum | Official Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: rgba(26, 29, 36, 0.6);
+            --accent-glow: #00ffcc;
+            --accent-purple: #9400d3;
+            --text-main: #ffffff;
+            --text-muted: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(0, 255, 204, 0.05) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(148, 0, 211, 0.08) 0px, transparent 50%);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Профиль */
+        .profile-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            margin-bottom: 24px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-glow);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+            margin-bottom: 16px;
+            object-fit: cover;
+            background: #1a1d24;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+            background: linear-gradient(45deg, #fff, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            color: var(--accent-glow);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+
+        /* Секции */
+        .section-title {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 24px 0 12px 8px;
+            font-weight: 600;
+        }
+
+        /* Кнопки ссылок */
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .link-item:hover, .link-item:active {
+            transform: translateY(-2px);
+            border-color: var(--accent-glow);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
+            background: rgba(26, 29, 36, 0.8);
+        }
+
+        .link-item i {
+            font-size: 1.3rem;
+            width: 32px;
+            color: var(--accent-glow);
+        }
+
+        .link-item.project i {
+            color: var(--accent-purple);
+        }
+
+        .link-item:hover i {
+            animation: pulse 1s infinite;
+        }
+
+        .link-text {
+            flex-grow: 1;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .arrow-icon {
+            font-size: 0.8rem !important;
+            color: var(--text-muted) !important;
+            width: auto !important;
+        }
+
+        /* Крипта */
+        .crypto-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .crypto-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .crypto-info i {
+            color: #f7931a; /* default btc color style */
+            font-size: 1.1rem;
+            width: 20px;
+        }
+
+        .crypto-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .crypto-address {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .copy-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: none;
+            color: var(--accent-glow);
+            padding: 8px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .copy-btn:active {
+            background: var(--accent-glow);
+            color: var(--bg-color);
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Адаптация под совсем маленькие экраны */
+        @media (max-width: 360px) {
+            .link-text { font-size: 0.9rem; }
+            .crypto-address { max-width: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Карточка профиля -->
+        <div class="profile-card">
+            <!-- Иконка-заглушка вместо фото. Если захочешь фото, просто замени этот тег на <img src="твой_аватар.jpg" class="avatar"> -->
+            <div style="display:inline-flex; align-items:center; justify-content:center; width:100px; height:100px; border-radius:50%; border:2px solid var(--accent-glow); box-shadow: 0 0 20px rgba(0, 255, 204, 0.3); margin-bottom: 16px; background: #161920;">
+                <i class="fa-solid fa-terminal" style="font-size: 2.5rem; color: var(--accent-glow);"></i>
+            </div>
+            <h1>Yosef-Isroel Teitelbaum</h1>
+            <div class="tag">Tech & Hardware Entrepreneur</div>
+            <p class="bio">Разработка комплексных IT-решений, кастомизация систем и hardware. Создатель проектов PicaDon.</p>
+        </div>
+
+        <!-- Соцсети -->
+        <div class="section-title">Социальные сети</div>
+        <div class="links-grid">
+            <a href="https://t.me/v9to5google" target="_blank" class="link-item">
+                <i class="fa-brands fa-telegram"></i>
+                <span class="link-text">Telegram</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+            <a href="https://www.instagram.com/yosef_isroel_teitelbaum" target="_blank" class="link-item">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="link-text">Instagram</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+            <a href="https://www.tiktok.com/@yosef_isroel_teitelbaum" target="_blank" class="link-item">
+                <i class="fa-brands fa-tiktok"></i>
+                <span class="link-text">TikTok</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+            <a href="https://www.threads.com/@yosef_isroel_teitelbaum" target="_blank" class="link-item">
+                <i class="fa-brands fa-threads"></i>
+                <span class="link-text">Threads</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+            <a href="https://vk.ru/yosef33354" target="_blank" class="link-item">
+                <i class="fa-brands fa-vk"></i>
+                <span class="link-text">ВКонтакте</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+        </div>
+
+        <!-- Проекты -->
+        <div class="section-title">Мои проекты</div>
+        <div class="links-grid">
+            <a href="https://t.me/PicaDon" target="_blank" class="link-item project">
+                <i class="fa-solid fa-bolt" style="color: var(--accent-purple);"></i>
+                <span class="link-text">PicaDon (Telegram)</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+            <a href="https://max.ru/PicaDon" target="_blank" class="link-item project">
+                <i class="fa-solid fa-layer-group" style="color: var(--accent-purple);"></i>
+                <span class="link-text">PicaDon (МАКС)</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+        </div>
+
+        <!-- Поддержка -->
+        <div class="section-title">Поддержать проекты</div>
+        
+        <div class="crypto-card">
+            <div class="crypto-info">
+                <i class="fa-solid fa-gem" style="color: #0088cc;"></i>
+                <div>
+                    <div class="crypto-name">USDT (TON)</div>
+                    <div class="crypto-address">UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG</div>
+                </div>
+            </div>
+            <button class="copy-btn" onclick="copyText('UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG', this)">Копировать</button>
+        </div>
+
+        <div class="crypto-card">
+            <div class="crypto-info">
+                <i class="fa-solid fa-t" style="color: #26a17b;"></i>
+                <div>
+                    <div class="crypto-name">USDT (TRC20)</div>
+                    <div class="crypto-address">TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z</div>
+                </div>
+            </div>
+            <button class="copy-btn" onclick="copyText('TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z', this)">Копировать</button>
+        </div>
+
+        <div class="crypto-card">
+            <div class="crypto-info">
+                <i class="fa-solid fa-diamond" style="color: #0088cc;"></i>
+                <div>
+                    <div class="crypto-name">TON</div>
+                    <div class="crypto-address">UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG</div>
+                </div>
+            </div>
+            <button class="copy-btn" onclick="copyText('UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG', this)">Копировать</button>
+        </div>
+
+        <div class="crypto-card">
+            <div class="crypto-info">
+                <i class="fa-brands fa-bitcoin" style="color: #f7931a;"></i>
+                <div>
+                    <div class="crypto-name">BTC</div>
+                    <div class="crypto-address">bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m</div>
+                </div>
+            </div>
+            <button class="copy-btn" onclick="copyText('bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m', this)">Копировать</button>
+        </div>
+
+        <div class="crypto-card">
+            <div class="crypto-info">
+                <i class="fa-brands fa-ethereum" style="color: #3c3c3d;"></i>
+                <div>
+                    <div class="crypto-name">ETH</div>
+                    <div class="crypto-address">0xCD3DAE075aB28096633123B56848837aDdC05D53</div>
+                </div>
+            </div>
+            <button class="copy-btn" onclick="copyText('0xCD3DAE075aB28096633123B56848837aDdC05D53', this)">Копировать</button>
+        </div>
+
+    </div>
+
+    <script>
+        function copyText(address, button) {
+            navigator.clipboard.writeText(address).then(() => {
+                const originalText = button.innerText;
+                button.innerText = 'Скопировано!';
+                button.style.background = 'var(--accent-glow)';
+                button.style.color = 'var(--bg-color)';
+                setTimeout(() => {
+                    button.innerText = originalText;
+                    button.style.background = 'rgba(255, 255, 255, 0.05)';
+                    button.style.color = 'var(--accent-glow)';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
