@@ -1,702 +1,2666 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="dark scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="mailru-domain" content="Msc25sO7FcgkJH40" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Yosef-Isroel Teitelbaum | Official Website</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>TEITELBAUM — Yosef-Isroel Teitelbaum | Independent Digital Creator &amp; Tech Entrepreneur</title>
+  <meta name="description" content="Персональное цифровое пространство Йосефа-Исроэля Тейтельбаума (Yosef-Isroel Teitelbaum). Создатель экосистемы PicaDon, ИИ-продуктов, Telegram Mini Apps и сетевой инфраструктуры OpenWrt." />
+  <meta name="keywords" content="Teitelbaum, Yosef-Isroel Teitelbaum, Йосеф-Исроэль Тейтельбаум, PicaDon, ПикаДон, PicaDon AI, FrostClick, Torat Chaim Digital, OpenWrt, Tech Entrepreneur, Digital Creator" />
+  <meta name="author" content="Yosef-Isroel Teitelbaum" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#050507" />
+  <link rel="canonical" href="https://teitelbaum.ru/" />
 
-    <style>
-        :root {
-            --bg-base: #06070a;
-            --card-bg: rgba(14, 17, 23, 0.65);
-            --card-border: rgba(255, 255, 255, 0.08);
-            --card-border-hover: rgba(0, 255, 204, 0.45);
-            
-            --accent-cyan: #00ffcc;
-            --accent-purple: #9d4edd;
-            --accent-blue: #0088cc;
-            
-            --text-primary: #f0f4f8;
-            --text-secondary: #8b98a5;
-            --text-muted: #536471;
-            
-            --glow-primary: rgba(0, 255, 204, 0.25);
-            --glow-purple: rgba(157, 78, 221, 0.25);
-            
-            --font-main: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', monospace;
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://teitelbaum.ru/" />
+  <meta property="og:title" content="TEITELBAUM — Building Ideas. Creating Digital Experiences." />
+  <meta property="og:description" content="Personal Digital Experience of Yosef-Isroel Teitelbaum — Independent Digital Creator, Tech &amp; Hardware Entrepreneur, founder of PicaDon." />
+  <meta property="og:site_name" content="TEITELBAUM.RU" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TEITELBAUM — Yosef-Isroel Teitelbaum" />
+  <meta name="twitter:description" content="Building Ideas. Creating Digital Experiences. Digital products, AI systems, Telegram Mini Apps &amp; network infrastructure." />
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF5500'/%3E%3Cstop offset='100%25' stop-color='%23FF1E42'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2307080C'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='2' stroke-opacity='0.65'/%3E%3Cpath d='M18 20H46V26H35V46H29V26H18V20Z' fill='url(%23g)'/%3E%3Ccircle cx='44' cy='42' r='4' fill='%23FF5500'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Syne, Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <!-- QR Code Generator Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yosef-Isroel Teitelbaum",
+    "alternateName": "Йосеф-Исроэль Тейтельбаум",
+    "url": "https://teitelbaum.ru/",
+    "jobTitle": "Independent Digital Creator & Tech Entrepreneur",
+    "email": "mailto:Yosef-Isroel@PicaDon.ru",
+    "sameAs": [
+      "https://t.me/YOSSI_LIVE",
+      "https://t.me/PicaDon",
+      "https://max.ru/PicaDon",
+      "https://www.youtube.com/@picadon",
+      "https://instagram.com/yossi_live",
+      "https://www.tiktok.com/@yossi_live",
+      "https://www.threads.net/@yossi_live",
+      "https://vk.com/picadon"
+    ],
+    "knowsAbout": [
+      "Digital Product Development",
+      "Artificial Intelligence",
+      "Telegram Mini Apps",
+      "OpenWrt & Network Infrastructure",
+      "Hardware Customization",
+      "Server Automation"
+    ]
+  }
+  </script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['Space Grotesk', 'Syne', 'Inter', 'sans-serif'],
+            syne: ['Syne', 'Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            obsidian: {
+              950: '#040406',
+              900: '#07080C',
+              800: '#0D0F17',
+              700: '#151824',
+            },
+            lava: {
+              400: '#FF7A29',
+              500: '#FF5500',
+              600: '#E03E00',
+            },
+            crimson: {
+              500: '#FF234B',
+              600: '#D91438',
+            }
+          }
         }
+      }
+    };
+  </script>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            -webkit-tap-highlight-color: transparent;
-        }
+  <style>
+    :root {
+      --bg-primary: #040406;
+      --bg-elevated: #0A0B10;
+      --accent-orange: #FF5500;
+      --accent-crimson: #FF234B;
+      --accent-amber: #FF9500;
+      --mx: 50vw;
+      --my: 30vh;
+    }
 
-        body {
-            background-color: var(--bg-base);
-            color: var(--text-primary);
-            font-family: var(--font-main);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 40px 16px 60px;
-            overflow-x: hidden;
-            position: relative;
-        }
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-        /* --- ФОНОВЫЕ СВЕТЯЩИЕСЯ СФЕРЫ (AURORA) --- */
-        .ambient-aurora {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            z-index: -2;
-            pointer-events: none;
-        }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-primary);
+      color: #F5F5F7;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      selection-background-color: #FF5500;
+    }
 
-        .aurora-orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.35;
-            animation: float 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    ::selection {
+      background: rgba(255, 85, 0, 0.35);
+      color: #FFFFFF;
+    }
 
-        .aurora-orb-1 {
-            width: 420px;
-            height: 420px;
-            background: var(--accent-cyan);
-            top: -100px;
-            left: -100px;
-        }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #050507;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 85, 0, 0.4);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 85, 0, 0.8);
+    }
 
-        .aurora-orb-2 {
-            width: 480px;
-            height: 480px;
-            background: var(--accent-purple);
-            bottom: -150px;
-            right: -100px;
-            animation-duration: 25s;
-            animation-delay: -5s;
-        }
+    /* Apple Liquid Glass System */
+    .liquid-glass {
+      position: relative;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        rgba(22, 24, 34, 0.56) 45%,
+        rgba(10, 11, 16, 0.72) 100%
+      );
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      box-shadow:
+        0 24px 60px -15px rgba(0, 0, 0, 0.78),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.22),
+        inset 0 -1px 0 0 rgba(255, 85, 0, 0.08);
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.35s ease,
+                  box-shadow 0.45s ease,
+                  background 0.45s ease;
+    }
 
-        .bg-grid {
-            position: fixed;
-            inset: 0;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-            background-size: 32px 32px;
-            mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
-            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
-            z-index: -1;
-            pointer-events: none;
-        }
+    .liquid-glass::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: radial-gradient(
+        420px circle at var(--card-mx, 50%) var(--card-my, 0%),
+        rgba(255, 105, 35, 0.42),
+        rgba(255, 255, 255, 0.12) 35%,
+        transparent 70%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      opacity: 0.75;
+      transition: opacity 0.35s ease;
+    }
 
-        @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(60px, 80px) scale(1.15); }
-            100% { transform: translate(-40px, 120px) scale(0.9); }
-        }
+    .liquid-glass:hover {
+      border-color: rgba(255, 100, 30, 0.32);
+      box-shadow:
+        0 30px 70px -12px rgba(255, 65, 0, 0.16),
+        0 20px 50px -15px rgba(0, 0, 0, 0.85),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.32),
+        inset 0 0 28px 0 rgba(255, 85, 0, 0.05);
+    }
 
-        /* --- ОСНОВНОЙ КОНТЕЙНЕР --- */
-        .container {
-            width: 100%;
-            max-width: 480px;
-            position: relative;
-            z-index: 1;
-        }
+    /* High-Refraction Pill Nav */
+    .liquid-pill-nav {
+      background: linear-gradient(
+        180deg,
+        rgba(24, 26, 36, 0.72) 0%,
+        rgba(10, 11, 17, 0.82) 100%
+      );
+      backdrop-filter: blur(32px) saturate(210%);
+      -webkit-backdrop-filter: blur(32px) saturate(210%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.65),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 -1px 0 rgba(255, 85, 0, 0.15);
+    }
 
-        /* --- КАРТОЧКА ПРОФИЛЯ --- */
-        .profile-card {
-            position: relative;
-            text-align: center;
-            padding: 34px 24px;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 28px;
-            backdrop-filter: blur(24px) saturate(180%);
-            -webkit-backdrop-filter: blur(24px) saturate(180%);
-            box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6);
-            margin-bottom: 28px;
-            overflow: hidden;
-            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
+    /* Subtle Surface Glass (Used for secondary modules so site is not monotonous) */
+    .editorial-surface {
+      background: rgba(12, 13, 19, 0.68);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .editorial-surface:hover {
+      background: rgba(18, 20, 29, 0.82);
+      border-color: rgba(255, 85, 0, 0.32);
+    }
 
-        .profile-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-        }
+    /* Kinetic Display Typography */
+    .hero-display-title {
+      font-family: 'Space Grotesk', 'Syne', sans-serif;
+      font-weight: 700;
+      line-height: 0.93;
+      letter-spacing: -0.045em;
+    }
 
-        .avatar-wrap {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
+    .text-outline-glass {
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.36);
+      text-shadow: 0 0 35px rgba(255, 85, 0, 0.12);
+      transition: all 0.4s ease;
+    }
+    .text-outline-glass:hover {
+      color: rgba(255, 255, 255, 0.95);
+      -webkit-text-stroke: 1.5px rgba(255, 85, 0, 0.8);
+      text-shadow: 0 0 40px rgba(255, 85, 0, 0.4);
+    }
 
-        .avatar-box {
-            width: 104px;
-            height: 104px;
-            border-radius: 26px;
-            background: linear-gradient(145deg, #161b24, #0b0d13);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(0, 255, 204, 0.3);
-            box-shadow: 0 0 35px var(--glow-primary);
-            position: relative;
-            overflow: hidden;
-        }
+    .lava-gradient-text {
+      background: linear-gradient(125deg, #FFFFFF 0%, #FFB088 30%, #FF5500 68%, #FF1E42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-        .avatar-box i {
-            font-size: 2.5rem;
-            color: var(--accent-cyan);
-            filter: drop-shadow(0 0 10px var(--accent-cyan));
-            animation: pulseGlow 4s infinite ease-in-out;
-        }
+    /* Blueprint Architectural Grid Mode */
+    body.blueprint-mode .arch-grid-overlay {
+      opacity: 0.45 !important;
+    }
+    body.blueprint-mode .liquid-glass {
+      outline: 1px dashed rgba(255, 85, 0, 0.45);
+      outline-offset: 4px;
+    }
+    body.blueprint-mode [data-blueprint-tag]::after {
+      content: attr(data-blueprint-tag);
+      position: absolute;
+      top: -18px;
+      right: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: #FF5500;
+      background: rgba(5, 5, 7, 0.9);
+      padding: 1px 6px;
+      border: 1px solid rgba(255, 85, 0, 0.4);
+      border-radius: 4px;
+      pointer-events: none;
+      letter-spacing: 0.06em;
+      z-index: 30;
+    }
 
-        /* Индикатор онлайн-статуса */
-        .status-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            background: rgba(0, 255, 204, 0.08);
-            border: 1px solid rgba(0, 255, 204, 0.25);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-family: var(--font-mono);
-            color: var(--accent-cyan);
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
-        }
+    /* Self-Assembling Animation States */
+    .assemble-target {
+      transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  filter 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    body.is-assembling .assemble-waiting {
+      opacity: 0.04 !important;
+      transform: translateY(24px) scale(0.96) !important;
+      filter: blur(10px) !important;
+    }
+    body.is-assembling .assemble-locking {
+      outline: 1.5px solid #FF5500 !important;
+      box-shadow: 0 0 40px rgba(255, 85, 0, 0.35), inset 0 0 20px rgba(255, 85, 0, 0.2) !important;
+    }
 
-        .status-dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: var(--accent-cyan);
-            box-shadow: 0 0 8px var(--accent-cyan);
-            animation: blink 2s infinite ease-in-out;
-        }
+    /* Scroll Reveal Animations */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-item.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-        h1 {
-            font-size: 1.55rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 6px;
-            background: linear-gradient(135deg, #ffffff 40%, #9ca3af 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    /* Ambient Floating Orbs */
+    @keyframes floatSlow {
+      0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+      33% { transform: translate3d(28px, -24px, 0) scale(1.06); }
+      66% { transform: translate3d(-20px, 18px, 0) scale(0.95); }
+    }
+    .ambient-orb {
+      animation: floatSlow 16s ease-in-out infinite;
+      pointer-events: none;
+    }
 
-        .tag {
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            font-family: var(--font-mono);
-            text-transform: uppercase;
-            letter-spacing: 1.8px;
-            margin-bottom: 14px;
-            font-weight: 500;
-            opacity: 0.9;
-        }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.55; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.12); }
+    }
+    .pulse-dot {
+      animation: pulseGlow 2.4s ease-in-out infinite;
+    }
 
-        .bio {
-            font-size: 0.92rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            max-width: 380px;
-            margin: 0 auto;
-        }
+    /* Custom Interactive Cursor (Desktop Only) */
+    @media (hover: hover) and (pointer: fine) {
+      #custom-cursor-dot, #custom-cursor-ring {
+        display: block;
+      }
+    }
+    @media (hover: none), (pointer: coarse) {
+      #custom-cursor-dot, #custom-cursor-ring {
+        display: none !important;
+      }
+    }
 
-        /* --- ЗАГОЛОВКИ СЕКЦИЙ --- */
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            font-family: var(--font-mono);
-            margin: 28px 0 14px 6px;
-        }
-
-        .section-header::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent);
-        }
-
-        /* --- ССЫЛКИ И ПРОЕКТЫ --- */
-        .links-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .link-item {
-            position: relative;
-            display: flex;
-            align-items: center;
-            padding: 16px 20px;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 18px;
-            text-decoration: none;
-            color: var(--text-primary);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-            overflow: hidden;
-        }
-
-        .link-item::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle 120px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.06), transparent 70%);
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none;
-        }
-
-        .link-item:hover::before {
-            opacity: 1;
-        }
-
-        .link-item:hover {
-            transform: translateY(-2px);
-            border-color: var(--card-border-hover);
-            box-shadow: 0 8px 24px -6px rgba(0, 255, 204, 0.15);
-        }
-
-        .link-icon-wrap {
-            width: 38px;
-            height: 38px;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 16px;
-            font-size: 1.25rem;
-            color: var(--accent-cyan);
-            transition: all 0.3s ease;
-        }
-
-        .link-item:hover .link-icon-wrap {
-            background: rgba(0, 255, 204, 0.1);
-            border-color: rgba(0, 255, 204, 0.3);
-            transform: scale(1.06);
-        }
-
-        /* Проекты: фиолетовый акцент */
-        .link-item.project .link-icon-wrap {
-            color: var(--accent-purple);
-        }
-
-        .link-item.project:hover {
-            border-color: rgba(157, 78, 221, 0.5);
-            box-shadow: 0 8px 24px -6px rgba(157, 78, 221, 0.2);
-        }
-
-        .link-item.project:hover .link-icon-wrap {
-            background: rgba(157, 78, 221, 0.12);
-            border-color: rgba(157, 78, 221, 0.4);
-        }
-
-        .link-text {
-            flex-grow: 1;
-            font-size: 0.98rem;
-            font-weight: 500;
-            letter-spacing: -0.2px;
-        }
-
-        .arrow-icon {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            transition: transform 0.25s ease, color 0.25s ease;
-        }
-
-        .link-item:hover .arrow-icon {
-            transform: translateX(4px);
-            color: var(--text-primary);
-        }
-
-        /* --- КРИПТА / ДОНАТЫ --- */
-        .crypto-card {
-            position: relative;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 18px;
-            padding: 14px 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 10px;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            transition: border-color 0.25s ease, transform 0.25s ease;
-        }
-
-        .crypto-card:hover {
-            border-color: rgba(255, 255, 255, 0.18);
-            transform: translateY(-1px);
-        }
-
-        .crypto-info {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            min-width: 0;
-            flex-grow: 1;
-        }
-
-        .crypto-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.15rem;
-            flex-shrink: 0;
-        }
-
-        .crypto-meta {
-            min-width: 0;
-            flex-grow: 1;
-        }
-
-        .crypto-name {
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: -0.2px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .crypto-address {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-top: 2px;
-            opacity: 0.85;
-        }
-
-        .copy-btn {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            color: var(--text-primary);
-            padding: 8px 14px;
-            border-radius: 12px;
-            cursor: pointer;
-            font-family: var(--font-main);
-            font-size: 0.78rem;
-            font-weight: 500;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-shrink: 0;
-        }
-
-        .copy-btn:hover {
-            background: rgba(0, 255, 204, 0.12);
-            border-color: rgba(0, 255, 204, 0.35);
-            color: var(--accent-cyan);
-        }
-
-        .copy-btn.copied {
-            background: var(--accent-cyan) !important;
-            border-color: var(--accent-cyan) !important;
-            color: #000000 !important;
-            font-weight: 600;
-        }
-
-        /* --- TOAST УВЕДОМЛЕНИЕ --- */
-        .toast {
-            position: fixed;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: rgba(14, 17, 23, 0.9);
-            border: 1px solid var(--accent-cyan);
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            font-family: var(--font-mono);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 255, 204, 0.2);
-            backdrop-filter: blur(12px);
-            z-index: 100;
-            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .toast.show {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
-
-        /* --- АНИМАЦИИ --- */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% { filter: drop-shadow(0 0 8px var(--accent-cyan)); }
-            50% { filter: drop-shadow(0 0 18px rgba(0, 255, 204, 0.8)); }
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.3; transform: scale(0.85); }
-        }
-
-        /* Каскадная задержка появления элементов */
-        .animate-cascade > * {
-            animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
-        }
-
-        .animate-cascade > *:nth-child(1) { animation-delay: 0.1s; }
-        .animate-cascade > *:nth-child(2) { animation-delay: 0.15s; }
-        .animate-cascade > *:nth-child(3) { animation-delay: 0.2s; }
-        .animate-cascade > *:nth-child(4) { animation-delay: 0.25s; }
-        .animate-cascade > *:nth-child(5) { animation-delay: 0.3s; }
-
-        @media (max-width: 400px) {
-            body { padding: 24px 12px 50px; }
-            .profile-card { padding: 28px 18px; }
-            .crypto-card { padding: 12px 14px; }
-            .copy-btn span { display: none; }
-            .copy-btn { padding: 8px 10px; }
-        }
-    </style>
+    /* Reduced Motion Support */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal-item {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="relative min-h-screen bg-obsidian-950 text-[#F5F5F7] antialiased selection:bg-lava-500/30">
 
-    <div class="ambient-aurora">
-        <div class="aurora-orb aurora-orb-1"></div>
-        <div class="aurora-orb aurora-orb-2"></div>
-    </div>
-    <div class="bg-grid"></div>
+  <!-- SVG Optical Liquid Refraction Filter -->
+  <svg class="hidden" aria-hidden="true">
+    <defs>
+      <filter id="liquid-refraction" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
 
-    <main class="container">
-        
-        <header class="profile-card">
-            <div class="avatar-wrap">
-                <div class="avatar-box">
-                    <i class="fa-solid fa-terminal"></i>
-                </div>
-            </div>
-            
-            <div class="status-badge">
-                <span class="status-dot"></span>
-                <span>SYSTEM ONLINE</span>
-            </div>
+  <!-- Interactive Ambient Background & Architectural Grid -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+    <!-- Cursor-tracked ambient spotlight -->
+    <div id="ambient-spotlight" class="absolute inset-0 opacity-70 transition-opacity duration-500"
+         style="background: radial-gradient(750px circle at var(--mx) var(--my), rgba(255, 85, 0, 0.09), rgba(255, 35, 75, 0.04) 40%, transparent 75%);"></div>
+    <!-- Cinematic Lava & Crimson Orbs -->
+    <div class="ambient-orb absolute -top-32 -left-24 w-[480px] h-[480px] rounded-full bg-gradient-to-br from-lava-500/18 via-crimson-500/10 to-transparent blur-[110px]"></div>
+    <div class="ambient-orb absolute top-[38%] -right-36 w-[520px] h-[520px] rounded-full bg-gradient-to-tl from-crimson-500/14 via-lava-500/10 to-transparent blur-[130px]" style="animation-delay: -6s;"></div>
+    <div class="ambient-orb absolute -bottom-40 left-[22%] w-[460px] h-[460px] rounded-full bg-gradient-to-tr from-amber-500/10 via-lava-500/8 to-transparent blur-[120px]" style="animation-delay: -11s;"></div>
+    <!-- Architectural Fine Grid -->
+    <div class="arch-grid-overlay absolute inset-0 opacity-[0.13] transition-opacity duration-500"
+         style="background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 64px 64px;"></div>
+  </div>
 
-            <h1>Yosef-Isroel Teitelbaum</h1>
-            <div class="tag">Tech & Hardware Entrepreneur</div>
-            <p class="bio">Разработка комплексных IT-решений, кастомизация систем и hardware. Создатель проектов PicaDon.</p>
-        </header>
+  <!-- Custom Interactive Cursor (Desktop) -->
+  <div id="custom-cursor-dot" class="fixed top-0 left-0 w-2.5 h-2.5 -ml-[5px] -mt-[5px] rounded-full bg-lava-500 pointer-events-none z-[120] transition-transform duration-75 shadow-[0_0_14px_#FF5500]"></div>
+  <div id="custom-cursor-ring" class="fixed top-0 left-0 w-9 h-9 -ml-[18px] -mt-[18px] rounded-full border border-white/25 bg-white/[0.02] backdrop-blur-[2px] pointer-events-none z-[119] transition-all duration-150 ease-out flex items-center justify-center">
+    <span id="cursor-label" class="text-[8px] font-mono uppercase tracking-widest text-white opacity-0 transition-opacity duration-150"></span>
+  </div>
 
-        <div class="section-header">Социальные сети</div>
-        <nav class="links-grid animate-cascade">
-            <a href="https://t.me/v9to5google" target="_blank" rel="noopener noreferrer" class="link-item">
-                <div class="link-icon-wrap" style="color: #229ED9;"><i class="fa-brands fa-telegram"></i></div>
-                <span class="link-text">Telegram</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
-            <a href="https://www.instagram.com/yosef_isroel_teitelbaum" target="_blank" rel="noopener noreferrer" class="link-item">
-                <div class="link-icon-wrap" style="color: #E1306C;"><i class="fa-brands fa-instagram"></i></div>
-                <span class="link-text">Instagram</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
-            <a href="https://www.tiktok.com/@yosef_isroel_teitelbaum" target="_blank" rel="noopener noreferrer" class="link-item">
-                <div class="link-icon-wrap" style="color: #ffffff;"><i class="fa-brands fa-tiktok"></i></div>
-                <span class="link-text">TikTok</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
-            <a href="https://www.threads.com/@yosef_isroel_teitelbaum" target="_blank" rel="noopener noreferrer" class="link-item">
-                <div class="link-icon-wrap" style="color: #ffffff;"><i class="fa-brands fa-threads"></i></div>
-                <span class="link-text">Threads</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
-            <a href="https://vk.ru/yosef33354" target="_blank" rel="noopener noreferrer" class="link-item">
-                <div class="link-icon-wrap" style="color: #0077FF;"><i class="fa-brands fa-vk"></i></div>
-                <span class="link-text">ВКонтакте</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
-        </nav>
-
-        <div class="section-header">Мои проекты</div>
-        <div class="links-grid animate-cascade">
-            <a href="https://t.me/PicaDon" target="_blank" rel="noopener noreferrer" class="link-item project">
-                <div class="link-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
-                <span class="link-text">PicaDon (Telegram)</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
-            <a href="https://max.ru/PicaDon" target="_blank" rel="noopener noreferrer" class="link-item project">
-                <div class="link-icon-wrap"><i class="fa-solid fa-cubes"></i></div>
-                <span class="link-text">PicaDon (МАКС)</span>
-                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-            </a>
+  <!-- Autonomous Self-Assembling Architect Cursor & HUD ("Эффект постепенного создания интерфейса") -->
+  <div id="architect-overlay" class="fixed inset-0 pointer-events-none z-[110] hidden">
+    <!-- Autonomous Builder Cursor -->
+    <div id="architect-cursor" class="fixed top-1/2 left-1/2 z-[115] transition-all duration-500 ease-out" style="transform: translate(-50%, -50%);">
+      <div class="relative flex items-start gap-2">
+        <svg class="w-6 h-6 text-lava-500 drop-shadow-[0_0_16px_rgba(255,85,0,0.95)]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 2L10.5 21L13.8 13.8L21 10.5L3 2Z" stroke="#FFFFFF" stroke-width="1.5" />
+        </svg>
+        <div class="liquid-glass px-3 py-1.5 rounded-xl border border-lava-500/60 bg-obsidian-950/90 shadow-2xl min-w-[210px]">
+          <div class="flex items-center justify-between gap-3 text-[10px] font-mono text-lava-400">
+            <span class="flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-lava-500 animate-ping"></span>
+              <span id="architect-step-code">ARCHITECT // 01</span>
+            </span>
+            <span id="architect-coords" class="text-white/60">X:140 Y:42</span>
+          </div>
+          <div id="architect-action-text" class="text-xs font-medium text-white mt-0.5 font-mono truncate">
+            Mounting Liquid Glass Nav...
+          </div>
         </div>
-
-        <div class="section-header">Поддержать проекты</div>
-        
-        <div class="crypto-card">
-            <div class="crypto-info">
-                <div class="crypto-icon" style="color: #0088cc;"><i class="fa-solid fa-gem"></i></div>
-                <div class="crypto-meta">
-                    <div class="crypto-name">USDT <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">(TON)</span></div>
-                    <div class="crypto-address">UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG</div>
-                </div>
-            </div>
-            <button class="copy-btn" onclick="copyCrypto('UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG', this, 'USDT (TON)')">
-                <i class="fa-regular fa-copy"></i>
-                <span>Копия</span>
-            </button>
-        </div>
-
-        <div class="crypto-card">
-            <div class="crypto-info">
-                <div class="crypto-icon" style="color: #26a17b;"><i class="fa-solid fa-t"></i></div>
-                <div class="crypto-meta">
-                    <div class="crypto-name">USDT <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">(TRC20)</span></div>
-                    <div class="crypto-address">TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z</div>
-                </div>
-            </div>
-            <button class="copy-btn" onclick="copyCrypto('TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z', this, 'USDT (TRC20)')">
-                <i class="fa-regular fa-copy"></i>
-                <span>Копия</span>
-            </button>
-        </div>
-
-        <div class="crypto-card">
-            <div class="crypto-info">
-                <div class="crypto-icon" style="color: #0088cc;"><i class="fa-solid fa-diamond"></i></div>
-                <div class="crypto-meta">
-                    <div class="crypto-name">TON</div>
-                    <div class="crypto-address">UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG</div>
-                </div>
-            </div>
-            <button class="copy-btn" onclick="copyCrypto('UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG', this, 'TON')">
-                <i class="fa-regular fa-copy"></i>
-                <span>Копия</span>
-            </button>
-        </div>
-
-        <div class="crypto-card">
-            <div class="crypto-info">
-                <div class="crypto-icon" style="color: #f7931a;"><i class="fa-brands fa-bitcoin"></i></div>
-                <div class="crypto-meta">
-                    <div class="crypto-name">BTC</div>
-                    <div class="crypto-address">bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m</div>
-                </div>
-            </div>
-            <button class="copy-btn" onclick="copyCrypto('bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m', this, 'BTC')">
-                <i class="fa-regular fa-copy"></i>
-                <span>Копия</span>
-            </button>
-        </div>
-
-        <div class="crypto-card">
-            <div class="crypto-info">
-                <div class="crypto-icon" style="color: #8c8c8c;"><i class="fa-brands fa-ethereum"></i></div>
-                <div class="crypto-meta">
-                    <div class="crypto-name">ETH</div>
-                    <div class="crypto-address">0xCD3DAE075aB28096633123B56848837aDdC05D53</div>
-                </div>
-            </div>
-            <button class="copy-btn" onclick="copyCrypto('0xCD3DAE075aB28096633123B56848837aDdC05D53', this, 'ETH')">
-                <i class="fa-regular fa-copy"></i>
-                <span>Копия</span>
-            </button>
-        </div>
-
-    </main>
-
-    <div id="toast" class="toast">
-        <i class="fa-solid fa-check" style="color: var(--accent-cyan);"></i>
-        <span id="toast-text">Адрес скопирован!</span>
+      </div>
     </div>
 
-    <script>
-        // Интерактивный светящийся курсор для карточек (Spotlight Effect)
-        document.querySelectorAll('.link-item, .crypto-card').forEach(card => {
-            card.addEventListener('mousemove', e => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                card.style.setProperty('--mouse-x', `${x}px`);
-                card.style.setProperty('--mouse-y', `${y}px`);
-            });
+    <!-- Bottom-left Compilation Progress Bar & Skip Button -->
+    <div class="fixed bottom-6 left-6 z-[116] pointer-events-auto">
+      <div class="liquid-glass px-4 py-3 rounded-2xl border border-white/15 flex items-center gap-4 shadow-2xl">
+        <div class="w-36 sm:w-48">
+          <div class="flex justify-between text-[10px] font-mono uppercase tracking-wider text-white/70 mb-1">
+            <span id="assembly-status-label">BUILDING UI SCENE</span>
+            <span id="assembly-pct" class="text-lava-400">25%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div id="assembly-bar" class="h-full bg-gradient-to-r from-lava-500 to-crimson-500 transition-all duration-300" style="width: 25%"></div>
+          </div>
+        </div>
+        <button id="btn-skip-assembly" type="button" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-[11px] font-mono uppercase tracking-wider text-white/80 hover:text-white transition">
+          Skip ⏭
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-24 md:bottom-8 right-6 z-[130] flex flex-col gap-2 pointer-events-none" aria-live="polite"></div>
+
+  <!-- =====================================================================
+       9. NAVIGATION — FLOATING APPLE LIQUID GLASS NAVBAR
+       ===================================================================== -->
+  <header id="nav-container" data-blueprint-tag="NAV // LIQUID_GLASS_BAR" class="assemble-target fixed top-4 inset-x-0 z-50 px-4 sm:px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <nav class="liquid-pill-nav rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between gap-3" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="#hero" class="group flex items-center gap-3 focus:outline-none">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-lava-500 to-crimson-600 p-[1px] shadow-[0_0_24px_rgba(255,85,0,0.4)] group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-obsidian-950/90 rounded-[11px] flex items-center justify-center font-syne font-extrabold text-sm tracking-tighter text-white">
+              T<span class="text-lava-500">.</span>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-syne font-extrabold text-sm sm:text-base tracking-[0.14em] text-white flex items-center gap-1.5">
+              TEITELBAUM
+              <span class="hidden sm:inline-block text-[10px] font-mono font-normal px-1.5 py-0.5 rounded bg-white/[0.07] text-lava-400 border border-white/10">.RU</span>
+            </span>
+            <span class="text-[10px] font-mono text-white/45 tracking-wider hidden sm:block">YOSEF-ISROEL TEITELBAUM</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-1 bg-white/[0.03] border border-white/[0.07] rounded-xl p-1">
+          <a href="#about" data-nav-link="about" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-white/75 hover:text-white hover:bg-white/[0.07] transition" data-i18n="nav_about">About</a>
+          <a href="#projects" data-nav-link="projects" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-white/75 hover:text-white hover:bg-white/[0.07] transition" data-i18n="nav_projects">Projects</a>
+          <a href="#socials" data-nav-link="socials" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-white/75 hover:text-white hover:bg-white/[0.07] transition" data-i18n="nav_socials">Socials</a>
+          <a href="#support" data-nav-link="support" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-white/75 hover:text-white hover:bg-white/[0.07] transition" data-i18n="nav_support">Support</a>
+          <a href="#contact" data-nav-link="contact" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-white/75 hover:text-white hover:bg-white/[0.07] transition" data-i18n="nav_contact">Contact</a>
+        </div>
+
+        <!-- Right Interactive Controls: Replay Assembly, Blueprint Mode, Lang Switch, CTA -->
+        <div class="flex items-center gap-2">
+          <button id="btn-replay-assembly" type="button" title="Запустить анимацию сборки интерфейса"
+                  class="magnetic-btn hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-lava-500/15 hover:bg-lava-500/25 border border-lava-500/35 text-xs font-mono text-lava-400 transition">
+            <span class="w-1.5 h-1.5 rounded-full bg-lava-500"></span>
+            <span data-i18n="btn_assemble">▶ Сборка UI</span>
+          </button>
+
+          <button id="btn-toggle-blueprint" type="button" title="Toggle Architectural Grid &amp; Glass X-Ray"
+                  class="hidden lg:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] border border-white/10 text-[11px] font-mono text-white/70 hover:text-white transition">
+            <span>⌘ GRID</span>
+          </button>
+
+          <!-- Language Switcher RU / EN -->
+          <button id="btn-lang-toggle" type="button" aria-label="Switch Language RU/EN"
+                  class="px-2.5 py-1.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.12] border border-white/10 text-xs font-mono font-semibold text-white transition">
+            <span id="lang-indicator">RU</span>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button id="btn-mobile-menu" type="button" aria-label="Open Mobile Menu" aria-expanded="false"
+                  class="md:hidden p-2 rounded-xl bg-white/[0.06] border border-white/10 text-white hover:bg-white/15 transition">
+            <svg id="icon-menu-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 7h16M4 12h16M10 17h10" />
+            </svg>
+            <svg id="icon-menu-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Expandable Liquid Glass Sheet -->
+      <div id="mobile-menu-sheet" class="hidden md:hidden mt-2 liquid-glass rounded-2xl p-4 border border-white/15 shadow-2xl">
+        <div class="grid grid-cols-2 gap-2 mb-3">
+          <a href="#about" class="mobile-nav-link px-3.5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-sm font-medium text-white flex items-center justify-between">
+            <span data-i18n="nav_about">About</span>
+            <span class="text-[10px] font-mono text-white/40">01</span>
+          </a>
+          <a href="#projects" class="mobile-nav-link px-3.5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-sm font-medium text-white flex items-center justify-between">
+            <span data-i18n="nav_projects">Projects</span>
+            <span class="text-[10px] font-mono text-white/40">02</span>
+          </a>
+          <a href="#socials" class="mobile-nav-link px-3.5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-sm font-medium text-white flex items-center justify-between">
+            <span data-i18n="nav_socials">Socials</span>
+            <span class="text-[10px] font-mono text-white/40">03</span>
+          </a>
+          <a href="#support" class="mobile-nav-link px-3.5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-sm font-medium text-white flex items-center justify-between">
+            <span data-i18n="nav_support">Support</span>
+            <span class="text-[10px] font-mono text-white/40">04</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-2 pt-2 border-t border-white/10">
+          <a href="#contact" class="mobile-nav-link flex-1 py-2.5 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 text-center text-xs font-mono uppercase tracking-wider font-semibold text-white">
+            Get In Touch
+          </a>
+          <button id="btn-mobile-replay" type="button" class="px-3.5 py-2.5 rounded-xl bg-white/[0.06] border border-white/15 text-xs font-mono text-lava-400">
+            ▶ Intro
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-28 sm:pt-32 pb-24">
+
+    <!-- =====================================================================
+         3. HERO SECTION — ПЕРВЫЙ ЭКРАН (ASYMMETRIC CINEMATIC OPENING SCENE)
+         ===================================================================== -->
+    <section id="hero" class="relative min-h-[88vh] flex flex-col justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-2 pb-14">
+
+      <!-- Top System Status Strip -->
+      <div id="hero-status-bar" data-blueprint-tag="HERO // TELEMETRY_STRIP" class="assemble-target flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-white/[0.08]">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lava-500/12 border border-lava-500/35 text-xs font-mono tracking-widest uppercase text-lava-400">
+            <span class="w-2 h-2 rounded-full bg-lava-500 pulse-dot"></span>
+            <span id="hero-creator-badge">INDEPENDENT DIGITAL CREATOR</span>
+          </span>
+          <span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-[11px] font-mono text-emerald-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            SYSTEM ONLINE
+          </span>
+        </div>
+
+        <div class="flex items-center gap-4 text-[11px] font-mono text-white/50">
+          <span>DOM // <strong class="text-white/80">TEITELBAUM.RU</strong></span>
+          <span class="hidden md:inline">FOUNDER // <strong class="text-lava-400">PICADON ECOSYSTEM</strong></span>
+          <span id="live-clock" class="text-white/70">MSK UTC+3</span>
+        </div>
+      </div>
+
+      <!-- Main Asymmetric Hero Grid (7 Cols Kinetic Typography : 5 Cols Liquid Glass Portrait Monolith) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center my-auto py-8 lg:py-12">
+
+        <!-- Left Column: Monumental Kinetic Typography & Interactive Controls -->
+        <div id="hero-typography-block" data-blueprint-tag="HERO // KINETIC_TYPE" class="assemble-target lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-white/55">
+            <span class="text-lava-500">00 //</span>
+            <span data-i18n="hero_eyebrow">PERSONAL DIGITAL BRAND &amp; CREATIVE TECHNOLOGY</span>
+          </div>
+
+          <!-- Headline with Authorial Variant Switcher -->
+          <div class="space-y-1">
+            <h1 class="hero-display-title text-[2.6rem] sm:text-6xl xl:text-[5.1rem] uppercase tracking-tight">
+              <span id="hero-line-1" class="block text-white">BUILDING IDEAS.</span>
+              <span id="hero-line-2" class="block text-outline-glass">CREATING DIGITAL</span>
+              <span id="hero-line-3" class="block lava-gradient-text">EXPERIENCES.</span>
+            </h1>
+          </div>
+
+          <!-- Authorial Headline Mode Switcher (Original vs Authorial Vision) -->
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40" data-i18n="hero_mode_label">РЕЖИМ ЗАГОЛОВКА:</span>
+            <button type="button" data-headline-mode="signature" class="headline-mode-btn px-2.5 py-1 rounded-lg text-[11px] font-mono bg-lava-500/20 text-lava-400 border border-lava-500/40 transition">
+              01. SIGNATURE
+            </button>
+            <button type="button" data-headline-mode="authorial" class="headline-mode-btn px-2.5 py-1 rounded-lg text-[11px] font-mono bg-white/[0.04] text-white/60 hover:text-white border border-white/10 transition">
+              02. ARCHITECTURAL
+            </button>
+            <button type="button" data-headline-mode="russian" class="headline-mode-btn px-2.5 py-1 rounded-lg text-[11px] font-mono bg-white/[0.04] text-white/60 hover:text-white border border-white/10 transition">
+              03. RU MANIFESTO
+            </button>
+          </div>
+
+          <p id="hero-subtitle" class="text-base sm:text-lg text-white/70 max-w-2xl leading-relaxed font-normal" data-i18n="hero_desc">
+            Персональное цифровое пространство <strong class="text-white font-semibold">Йосефа-Исроэля Тейтельбаума</strong>. Разработка комплексных IT-решений, эксперименты с искусственным интеллектом, экосистема проектов <span class="text-lava-400 font-medium">PicaDon</span>, Telegram Mini Apps и кастомная сетевая инфраструктура.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div id="hero-cta-group" class="assemble-target flex flex-wrap items-center gap-3.5 pt-2">
+            <a href="#projects" data-cursor-text="VIEW"
+               class="magnetic-btn group relative inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-gradient-to-r from-lava-500 to-crimson-500 text-white font-display font-semibold text-sm tracking-wider uppercase shadow-[0_14px_35px_rgba(255,85,0,0.38)] hover:shadow-[0_18px_45px_rgba(255,85,0,0.58)] transition-all">
+              <span data-i18n="hero_btn_explore">EXPLORE MY WORK</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+
+            <a href="#contact" data-cursor-text="TALK"
+               class="magnetic-btn liquid-glass inline-flex items-center gap-3 px-7 py-4 rounded-2xl text-white font-display font-semibold text-sm tracking-wider uppercase hover:border-lava-500/50 transition-all">
+              <span data-i18n="hero_btn_contact">GET IN TOUCH</span>
+              <span class="w-2 h-2 rounded-full bg-lava-500"></span>
+            </a>
+
+            <button id="btn-hero-assemble" type="button"
+                    class="inline-flex items-center gap-2 px-4 py-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 text-xs font-mono text-white/70 hover:text-lava-400 transition"
+                    title="Посмотреть сцену автоматической сборки интерфейса">
+              <svg class="w-4 h-4 text-lava-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+              </svg>
+              <span data-i18n="hero_replay_scene">Live Scene</span>
+            </button>
+          </div>
+
+          <!-- Key Domains Quick Pill Matrix -->
+          <div class="pt-4 grid grid-cols-3 gap-3 max-w-lg">
+            <div class="editorial-surface rounded-xl px-3.5 py-2.5">
+              <div class="text-[10px] font-mono text-white/45 uppercase">ECOSYSTEM</div>
+              <div class="text-xs sm:text-sm font-display font-semibold text-white mt-0.5">PicaDon &amp; AI</div>
+            </div>
+            <div class="editorial-surface rounded-xl px-3.5 py-2.5">
+              <div class="text-[10px] font-mono text-white/45 uppercase">INFRASTRUCTURE</div>
+              <div class="text-xs sm:text-sm font-display font-semibold text-white mt-0.5">OpenWrt &amp; VPS</div>
+            </div>
+            <div class="editorial-surface rounded-xl px-3.5 py-2.5">
+              <div class="text-[10px] font-mono text-white/45 uppercase">PLATFORMS</div>
+              <div class="text-xs sm:text-sm font-display font-semibold text-white mt-0.5">Telegram &amp; MAX</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Asymmetric Liquid Glass Portrait Monolith with 3D Parallax -->
+        <div id="hero-portrait-block" data-blueprint-tag="HERO // PORTRAIT_MONOLITH" class="assemble-target lg:col-span-5 relative flex justify-center lg:justify-end">
+          <div id="parallax-portrait-card" class="relative w-full max-w-[430px] transition-transform duration-200 ease-out" style="transform-style: preserve-3d;">
+
+            <!-- Ambient Backlight Behind Portrait -->
+            <div class="absolute -inset-3 rounded-[34px] bg-gradient-to-tr from-lava-500/30 via-crimson-500/20 to-transparent blur-2xl opacity-80 pointer-events-none"></div>
+
+            <!-- Main Liquid Glass Monolith -->
+            <div class="liquid-glass rounded-[30px] p-3.5 sm:p-4 relative overflow-hidden">
+              <!-- Top Monolith Header -->
+              <div class="flex items-center justify-between px-2 pb-3 text-[11px] font-mono text-white/60">
+                <span class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-lava-500"></span>
+                  <span>ID // YOSEF-ISROEL</span>
+                </span>
+                <span class="text-lava-400">TEITELBAUM.RU</span>
+              </div>
+
+              <!-- Authentic Portrait Container -->
+              <div class="relative rounded-2xl overflow-hidden aspect-square bg-obsidian-900 border border-white/10 group">
+                <img src="assets/portrait.jpg"
+                     alt="Yosef-Isroel Teitelbaum — Founder of PicaDon &amp; Independent Digital Creator"
+                     class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <!-- Subtle Cinematic Gradient Vignette -->
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/15 to-transparent opacity-80"></div>
+
+                <!-- Bottom Overlay Info Inside Portrait -->
+                <div class="absolute bottom-3 inset-x-3 liquid-glass rounded-xl p-3.5 border border-white/15">
+                  <div class="flex items-center justify-between gap-2">
+                    <div>
+                      <div class="text-sm sm:text-base font-display font-bold text-white leading-tight">
+                        Yosef-Isroel Teitelbaum
+                      </div>
+                      <div class="text-xs text-lava-400 font-mono mt-0.5" data-i18n="portrait_role">
+                        Tech &amp; Hardware Entrepreneur • Creator of PicaDon
+                      </div>
+                    </div>
+                    <a href="https://t.me/YOSSI_LIVE" target="_blank" rel="noopener noreferrer"
+                       aria-label="Telegram Direct"
+                       class="w-9 h-9 rounded-xl bg-lava-500/20 hover:bg-lava-500 border border-lava-500/40 flex items-center justify-center text-white transition">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Monolith Telemetry Bar -->
+              <div class="mt-3 pt-2.5 px-1 flex items-center justify-between text-[11px] font-mono text-white/55">
+                <span>STACK: AI • TMA • OPENWRT</span>
+                <span class="text-emerald-400">● VERIFIED IDENTITY</span>
+              </div>
+            </div>
+
+            <!-- Floating Autonomous Glass Chip 1 (Top-Left) -->
+            <div class="hidden sm:flex liquid-glass absolute -top-5 -left-8 px-3.5 py-2.5 rounded-2xl items-center gap-2.5 border border-white/15 shadow-2xl"
+                 style="transform: translateZ(35px);">
+              <div class="w-8 h-8 rounded-xl bg-lava-500/20 border border-lava-500/40 flex items-center justify-center text-lava-400 font-mono text-xs font-bold">
+                ⚡
+              </div>
+              <div>
+                <div class="text-[10px] font-mono text-white/50 uppercase">FLAGSHIP ECOSYSTEM</div>
+                <div class="text-xs font-semibold text-white">PicaDon • 1.27K+ Sub</div>
+              </div>
+            </div>
+
+            <!-- Floating Autonomous Glass Chip 2 (Bottom-Right) -->
+            <div class="hidden sm:flex liquid-glass absolute -bottom-5 -right-5 px-3.5 py-2.5 rounded-2xl items-center gap-2.5 border border-white/15 shadow-2xl"
+                 style="transform: translateZ(45px);">
+              <div class="w-8 h-8 rounded-xl bg-crimson-500/20 border border-crimson-500/40 flex items-center justify-center text-crimson-500 font-mono text-xs font-bold">
+                AI
+              </div>
+              <div>
+                <div class="text-[10px] font-mono text-white/50 uppercase">LIVE IN MAX &amp; TG</div>
+                <div class="text-xs font-semibold text-white">Multi-Model AI &amp; VPN</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator & Live Interactive Studio Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-white/[0.07]">
+        <a href="#about" class="group inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white/55 hover:text-white transition">
+          <span class="w-7 h-11 rounded-full border border-white/20 flex items-start justify-center p-1.5 group-hover:border-lava-500 transition">
+            <span class="w-1.5 h-2.5 rounded-full bg-lava-500 animate-bounce"></span>
+          </span>
+          <span data-i18n="scroll_explore">SCROLL TO EXPLORE DIGITAL SPACE</span>
+        </a>
+
+        <div class="flex items-center gap-6 text-xs font-mono text-white/45">
+          <span>01 / ABOUT</span>
+          <span>02 / PROJECTS (05)</span>
+          <span>03 / SOCIALS (09)</span>
+          <span>04 / CRYPTO SUPPORT (05)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         4. ABOUT ME — ОБО МНЕ (HONEST, INTERACTIVE SELF-PRESENTATION)
+         ===================================================================== -->
+    <section id="about" class="reveal-item max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 sm:py-28 border-t border-white/[0.07]">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div>
+          <div class="text-xs font-mono uppercase tracking-[0.22em] text-lava-400 mb-2">
+            01 // IDENTITY &amp; FOCUS AREAS
+          </div>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white" data-i18n="about_title">
+            ОБО МНЕ — ЧЕСТНАЯ САМОПРЕЗЕНТАЦИЯ
+          </h2>
+        </div>
+        <p class="text-sm font-mono text-white/50 max-w-md" data-i18n="about_manifesto_tag">
+          Без вымышленных регалий и шаблонных резюме. Реальные продукты, собственные серверы, эксперименты с ИИ и работающее железо.
+        </p>
+      </div>
+
+      <!-- Main About Asymmetric Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+        <!-- Left 7 Columns: Narrative + Interactive Focus Domain Switcher -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="liquid-glass rounded-3xl p-6 sm:p-8 space-y-5" data-blueprint-tag="ABOUT // BIO_CORE">
+            <div class="flex items-center gap-3">
+              <img src="assets/portrait.jpg" alt="Yosef-Isroel Teitelbaum" class="w-12 h-12 rounded-2xl object-cover border border-lava-500/40" />
+              <div>
+                <h3 class="text-lg sm:text-xl font-display font-bold text-white">
+                  Йосеф-Исроэль Тейтельбаум <span class="text-white/40 font-normal">(Yosef-Isroel Teitelbaum)</span>
+                </h3>
+                <p class="text-xs font-mono text-lava-400">Independent Digital Creator • Tech &amp; Hardware Entrepreneur</p>
+              </div>
+            </div>
+
+            <p class="text-white/80 leading-relaxed text-sm sm:text-base" data-i18n="about_p1">
+              Я создаю цифровые продукты, медийные проекты и собственную сетевую инфраструктуру на стыке современных веб-технологий, генеративного искусственного интеллекта и аппаратной кастомизации. Мой главный принцип — <strong class="text-white">проверять идеи практикой</strong>: от идеи и визуального интерфейса до настройки Linux-серверов, прошивки роутеров OpenWrt и запуска живых ботов в Telegram и MAX.
+            </p>
+
+            <p class="text-white/70 leading-relaxed text-sm sm:text-base" data-i18n="about_p2">
+              Вместо сухих корпоративных титулов я фокусируюсь на развитии собственной экосистемы <strong class="text-white">PicaDon</strong>, тестировании новейших нейросетевых моделей (Gemini, Claude, GPT, Veo), разработке интерактивных Telegram Mini Apps и цифровизации образовательных и общинных инициатив.
+            </p>
+
+            <!-- Interactive Domain Tabs -->
+            <div class="pt-3 border-t border-white/10">
+              <div class="text-[11px] font-mono uppercase tracking-wider text-white/45 mb-3" data-i18n="about_tabs_label">
+                ИНТЕРАКТИВНЫЙ СРЕЗ НАПРАВЛЕНИЙ ДЕЯТЕЛЬНОСТИ:
+              </div>
+              <div class="flex flex-wrap gap-2 mb-4" role="tablist">
+                <button type="button" data-about-tab="ai" class="about-tab-btn px-3.5 py-2 rounded-xl text-xs font-mono font-medium bg-lava-500 text-white shadow-lg transition">
+                  01. ИИ &amp; Цифровые продукты
+                </button>
+                <button type="button" data-about-tab="infra" class="about-tab-btn px-3.5 py-2 rounded-xl text-xs font-mono font-medium bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+                  02. Сети, Серверы &amp; OpenWrt
+                </button>
+                <button type="button" data-about-tab="hardware" class="about-tab-btn px-3.5 py-2 rounded-xl text-xs font-mono font-medium bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+                  03. Медиа, Бренд &amp; Hardware
+                </button>
+              </div>
+
+              <!-- Dynamic Tab Content Panel -->
+              <div id="about-tab-panel" class="editorial-surface rounded-2xl p-5 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span id="about-tab-title" class="text-sm font-display font-bold text-white">Искусственный интеллект, Боты и Telegram Mini Apps</span>
+                  <span id="about-tab-badge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-lava-500/20 text-lava-400 border border-lava-500/30">ACTIVE FOCUS</span>
+                </div>
+                <p id="about-tab-desc" class="text-xs sm:text-sm text-white/70 leading-relaxed">
+                  Создание коммерческих и экспериментальных ботов в Telegram и мессенджере MAX (включая мультимодельный агрегатор PicaDon AI через OpenRouter API и ЮKassa), проектирование интерфейсов в эстетике Apple Liquid Glass и генеративные видео/аудио эксперименты (Google Flow, Veo, HeyGen, ElevenLabs).
+                </p>
+                <div id="about-tab-tags" class="flex flex-wrap gap-1.5 pt-1">
+                  <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/80">OpenRouter API</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/80">Node.js &amp; SQLite</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/80">Telegram WebApp API</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/80">MAX Bot API</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/80">Google AI Studio &amp; Veo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 Authentic Directions Tag Cloud -->
+          <div class="editorial-surface rounded-3xl p-6">
+            <div class="text-xs font-mono uppercase tracking-wider text-white/45 mb-3" data-i18n="about_directions_title">
+              КЛЮЧЕВЫЕ СФЕРЫ ИНТЕРЕСОВ И ПРАКТИКИ:
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">⚡ Цифровые технологии</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🤖 Искусственный интеллект</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🧪 Эксперименты с AI-инструментами</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">💎 Разработка цифровых продуктов</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">✈️ Создание Telegram &amp; MAX проектов</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">⚙️ Автоматизация процессов</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🖥️ Серверная инфраструктура (Ubuntu VPS)</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🌐 Сетевые технологии и OpenWrt</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🚀 Технологическое предпринимательство</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🎨 Дизайн цифровых интерфейсов</span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10 text-xs text-white/85 hover:border-lava-500/50 transition">🔧 Hardware и кастомизация систем</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 5 Columns: Interactive Live Console & Verified Ecosystem Telemetry -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Interactive Terminal Widget -->
+          <div class="liquid-glass rounded-3xl overflow-hidden border border-white/15" data-blueprint-tag="ABOUT // INTERACTIVE_CLI">
+            <div class="px-4 py-3 bg-white/[0.04] border-b border-white/10 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-crimson-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-400/80"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-400/80"></span>
+                <span class="ml-2 text-[11px] font-mono text-white/60">yosef@teitelbaum.ru:~ (interactive)</span>
+              </div>
+              <span class="text-[10px] font-mono text-lava-400">BASH // LIVE</span>
+            </div>
+
+            <div class="p-4 sm:p-5 font-mono text-xs space-y-2.5 bg-obsidian-950/75 min-h-[250px] max-h-[300px] overflow-y-auto" id="terminal-output">
+              <div class="text-white/50"># TEITELBAUM.RU Interactive System Inspector</div>
+              <div><span class="text-lava-400">yosef@teitelbaum:~$</span> whoami</div>
+              <div class="text-white/85 pl-2">
+                Yosef-Isroel Teitelbaum — Independent Digital Creator, Tech &amp; Hardware Entrepreneur. Founder of PicaDon.
+              </div>
+              <div><span class="text-lava-400">yosef@teitelbaum:~$</span> status --ecosystem</div>
+              <div class="text-emerald-400 pl-2">
+                [OK] PicaDon Telegram (@PicaDon) — 1,270+ subscribers<br/>
+                [OK] PicaDon MAX (max.ru/PicaDon &amp; @se13448304_1_bot)<br/>
+                [OK] Infrastructure: Ubuntu 26.04 LTS • VLESS Reality • AmneziaWG • OpenWrt 25.12
+              </div>
+            </div>
+
+            <!-- Quick Command Chips -->
+            <div class="px-4 py-3 bg-white/[0.03] border-t border-white/10">
+              <div class="text-[10px] font-mono text-white/45 mb-2">CLICK TO EXECUTE COMMAND:</div>
+              <div class="flex flex-wrap gap-1.5">
+                <button type="button" data-term-cmd="stack" class="term-cmd-btn px-2.5 py-1 rounded-lg bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-[11px] font-mono text-white/80 transition">./stack</button>
+                <button type="button" data-term-cmd="network" class="term-cmd-btn px-2.5 py-1 rounded-lg bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-[11px] font-mono text-white/80 transition">./openwrt-lab</button>
+                <button type="button" data-term-cmd="projects" class="term-cmd-btn px-2.5 py-1 rounded-lg bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-[11px] font-mono text-white/80 transition">./projects</button>
+                <button type="button" data-term-cmd="wallets" class="term-cmd-btn px-2.5 py-1 rounded-lg bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-[11px] font-mono text-white/80 transition">./crypto</button>
+                <button type="button" data-term-cmd="clear" class="term-cmd-btn px-2.5 py-1 rounded-lg bg-white/[0.06] hover:bg-white/15 border border-white/10 text-[11px] font-mono text-white/50 transition">clear</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Grounded Ecosystem Figures -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="liquid-glass rounded-2xl p-5">
+              <div class="text-[11px] font-mono text-white/50 uppercase">PICADON MEDIA</div>
+              <div class="text-2xl sm:text-3xl font-display font-bold text-white mt-1">1.27K+</div>
+              <div class="text-xs text-lava-400 mt-1" data-i18n="stat_subs">Подписчиков и 2.99K+ медиа в @PicaDon</div>
+            </div>
+            <div class="liquid-glass rounded-2xl p-5">
+              <div class="text-[11px] font-mono text-white/50 uppercase">ACTIVE PROJECTS</div>
+              <div class="text-2xl sm:text-3xl font-display font-bold text-white mt-1">5 Core</div>
+              <div class="text-xs text-lava-400 mt-1" data-i18n="stat_projects">Экосистема сервисов, ИИ-ботов и сетей</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. MY PROJECTS — МОИ ПРОЕКТЫ (INTERACTIVE SHOWCASE & DEEP-DIVE MODALS)
+         ===================================================================== -->
+    <section id="projects" class="reveal-item max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 sm:py-28 border-t border-white/[0.07]">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="text-xs font-mono uppercase tracking-[0.22em] text-lava-400 mb-2">
+            02 // SELECTED WORKS &amp; TECHNICAL INITIATIVES
+          </div>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white" data-i18n="projects_title">
+            MY PROJECTS — МОИ ПРОЕКТЫ
+          </h2>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap gap-2" role=" group" aria-label="Filter projects">
+          <button type="button" data-proj-filter="all" class="proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-lava-500 text-white font-semibold transition">
+            ALL (05)
+          </button>
+          <button type="button" data-proj-filter="ecosystem" class="proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+            PICADON
+          </button>
+          <button type="button" data-proj-filter="ai" class="proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+            AI &amp; BOTS
+          </button>
+          <button type="button" data-proj-filter="tma" class="proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+            MINI APPS
+          </button>
+          <button type="button" data-proj-filter="infra" class="proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+            INFRASTRUCTURE
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Asymmetric Bento Grid (Rendered dynamically + static semantic fallback) -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- Project 1: PICADON (Spans 7 cols on desktop) -->
+        <article data-proj-card="picadon" data-category="ecosystem" data-blueprint-tag="PROJECT // 01_PICADON"
+                 class="project-card md:col-span-7 liquid-glass rounded-3xl overflow-hidden group cursor-pointer flex flex-col justify-between">
+          <div class="relative h-64 sm:h-72 overflow-hidden bg-obsidian-900">
+            <img src="assets/proj_picadon.jpg"
+                 alt="PicaDon Digital Ecosystem &amp; Network Infrastructure"
+                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/35 to-transparent"></div>
+            <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
+              <span class="px-3 py-1 rounded-full bg-obsidian-950/80 backdrop-blur-md border border-white/15 text-[11px] font-mono text-white/85">
+                01 // DIGITAL ECOSYSTEM &amp; INFRASTRUCTURE
+              </span>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-[11px] font-mono text-emerald-300">
+                ● ACTIVE • PRODUCTION
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-5">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white group-hover:text-lava-400 transition">
+                  PICADON &amp; PICADON+
+                </h3>
+                <span class="text-xs font-mono text-white/40">@PicaDon • picadon-tech.ru</span>
+              </div>
+              <p class="text-sm sm:text-base text-white/70 leading-relaxed" data-i18n="proj_picadon_desc">
+                Флагманский технологический проект: авторское медиа-сообщество о технологиях и мобильных экосистемах в Telegram и MAX, объединённое с собственной высокоскоростной сетевой инфраструктурой PicaDon+ (VLESS Reality, AmneziaWG, автоматизация ключей и клиентский кабинет в стиле Apple Liquid Glass).
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/75">Telegram &amp; MAX</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/75">VLESS / AmneziaWG</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/75">Liquid Glass UI</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button type="button" data-open-project="picadon"
+                        class="px-4 py-2 rounded-xl bg-white/[0.08] hover:bg-lava-500 text-xs font-mono uppercase tracking-wider text-white transition">
+                  Case Details →
+                </button>
+                <a href="https://t.me/PicaDon" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();"
+                   class="px-4 py-2 rounded-xl bg-lava-500/20 hover:bg-lava-500 border border-lava-500/40 text-xs font-mono uppercase tracking-wider text-lava-300 hover:text-white transition">
+                  View Project ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: AI EXPERIMENTS & PICADON AI (Spans 5 cols on desktop) -->
+        <article data-proj-card="ai" data-category="ai" data-blueprint-tag="PROJECT // 02_AI_SYSTEMS"
+                 class="project-card md:col-span-5 liquid-glass rounded-3xl overflow-hidden group cursor-pointer flex flex-col justify-between">
+          <div class="relative h-64 sm:h-72 overflow-hidden bg-obsidian-900">
+            <img src="assets/proj_ai.jpg"
+                 alt="AI Experiments &amp; PicaDon AI Multi-Model Bot"
+                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/35 to-transparent"></div>
+            <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
+              <span class="px-3 py-1 rounded-full bg-obsidian-950/80 backdrop-blur-md border border-white/15 text-[11px] font-mono text-white/85">
+                02 // AI &amp; AUTOMATION
+              </span>
+              <span class="px-3 py-1 rounded-full bg-lava-500/20 backdrop-blur-md border border-lava-500/40 text-[11px] font-mono text-lava-300">
+                ● LIVE BOT IN MAX
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-5">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white group-hover:text-lava-400 transition">
+                  AI EXPERIMENTS &amp; PICADON AI
+                </h3>
+              </div>
+              <p class="text-sm sm:text-base text-white/70 leading-relaxed" data-i18n="proj_ai_desc">
+                Разработка мультимодельного ИИ-агрегатора в мессенджере MAX (@se13448304_1_bot на Node.js, SQLite и OpenRouter API с биллингом ЮKassa), объединяющего Gemini, Claude, GPT, DeepSeek и генерацию графики, а также эксперименты с ИИ-видео (Google Flow, Veo, HeyGen).
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/75">OpenRouter</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/75">MAX Bot API</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/75">Veo / Flow</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button type="button" data-open-project="ai"
+                        class="px-3.5 py-2 rounded-xl bg-white/[0.08] hover:bg-lava-500 text-xs font-mono uppercase tracking-wider text-white transition">
+                  Details →
+                </button>
+                <a href="https://max.ru/se13448304_1_bot" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();"
+                   class="px-3.5 py-2 rounded-xl bg-lava-500/20 hover:bg-lava-500 border border-lava-500/40 text-xs font-mono uppercase tracking-wider text-lava-300 hover:text-white transition">
+                  View Project ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: TORAT CHAIM DIGITAL (Spans 4 cols) -->
+        <article data-proj-card="toratchaim" data-category="ecosystem" data-blueprint-tag="PROJECT // 03_TORAT_CHAIM"
+                 class="project-card md:col-span-4 liquid-glass rounded-3xl overflow-hidden group cursor-pointer flex flex-col justify-between">
+          <div class="relative h-52 overflow-hidden bg-obsidian-900">
+            <img src="assets/proj_toratchaim.jpg"
+                 alt="Torat Chaim Digital Initiatives"
+                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/35 to-transparent"></div>
+            <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-full bg-obsidian-950/80 backdrop-blur-md border border-white/15 text-[10px] font-mono text-white/85">
+                03 // INSTITUTIONAL DIGITAL
+              </span>
+              <span class="px-2.5 py-1 rounded-full bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-[10px] font-mono text-amber-300">
+                ● ACTIVE
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-white group-hover:text-lava-400 transition">
+                TORAT CHAIM DIGITAL
+              </h3>
+              <p class="text-xs sm:text-sm text-white/70 leading-relaxed" data-i18n="proj_torat_desc">
+                Цифровые инициативы и технологические решения для Иешивы «Торат Хаим»: структурированные базы данных и учётные системы, медиа-вещание «Торат-Хаим ⭕LIVE», автоматизация расписаний и праздничных бюллетеней.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+              <button type="button" data-open-project="toratchaim"
+                      class="px-3.5 py-2 rounded-xl bg-white/[0.08] hover:bg-lava-500 text-xs font-mono uppercase tracking-wider text-white transition">
+                Explore Case →
+              </button>
+              <a href="https://eshiva.ru/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();"
+                 class="px-3.5 py-2 rounded-xl bg-white/[0.05] hover:bg-white/15 border border-white/10 text-xs font-mono text-white/80 transition">
+                eshiva.ru ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: FROSTCLICK (Spans 4 cols) -->
+        <article data-proj-card="frostclick" data-category="tma" data-blueprint-tag="PROJECT // 04_FROSTCLICK"
+                 class="project-card md:col-span-4 liquid-glass rounded-3xl overflow-hidden group cursor-pointer flex flex-col justify-between">
+          <div class="relative h-52 overflow-hidden bg-obsidian-900">
+            <img src="assets/proj_frostclick.jpg"
+                 alt="FrostClick Telegram Mini App"
+                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/35 to-transparent"></div>
+            <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-full bg-obsidian-950/80 backdrop-blur-md border border-white/15 text-[10px] font-mono text-white/85">
+                04 // TELEGRAM MINI APP
+              </span>
+              <span class="px-2.5 py-1 rounded-full bg-sky-500/20 backdrop-blur-md border border-sky-500/40 text-[10px] font-mono text-sky-300">
+                ● TMA PROTOTYPE
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-white group-hover:text-lava-400 transition">
+                FROSTCLICK TMA
+              </h3>
+              <p class="text-xs sm:text-sm text-white/70 leading-relaxed" data-i18n="proj_frost_desc">
+                Интерактивный проект внутри экосистемы Telegram Mini Apps (концепт FrostClick / Iceberg): реактивный интерфейс с поддержкой Telegram WebApp API, Haptic Feedback и синхронизацией прогресса в реальном времени через Firebase.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+              <button type="button" data-open-project="frostclick"
+                      class="w-full py-2 rounded-xl bg-lava-500/20 hover:bg-lava-500 border border-lava-500/40 text-xs font-mono uppercase tracking-wider text-lava-300 hover:text-white transition">
+                Launch Interactive TMA Demo →
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: NETWORK & INFRASTRUCTURE (Spans 4 cols) -->
+        <article data-proj-card="network" data-category="infra" data-blueprint-tag="PROJECT // 05_INFRASTRUCTURE"
+                 class="project-card md:col-span-4 liquid-glass rounded-3xl overflow-hidden group cursor-pointer flex flex-col justify-between">
+          <div class="relative h-52 overflow-hidden bg-obsidian-900">
+            <img src="assets/proj_network.jpg"
+                 alt="Network &amp; OpenWrt Infrastructure"
+                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/35 to-transparent"></div>
+            <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-full bg-obsidian-950/80 backdrop-blur-md border border-white/15 text-[10px] font-mono text-white/85">
+                05 // SYSTEMS &amp; OPENWRT
+              </span>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-[10px] font-mono text-emerald-300">
+                ● ACTIVE LAB
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-white group-hover:text-lava-400 transition">
+                NETWORK &amp; INFRASTRUCTURE
+              </h3>
+              <p class="text-xs sm:text-sm text-white/70 leading-relaxed" data-i18n="proj_net_desc">
+                Кастомные сборки OpenWrt 25.12 (Xiaomi AX3000T, SmartBox Giga), политика split-tunneling маршрутизации (Mihomo / OpenClash / Podkop), AdGuard Home DoH/DoT и серверные узлы Xray VLESS Reality / AmneziaWG на Ubuntu VPS.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+              <button type="button" data-open-project="network"
+                      class="w-full py-2 rounded-xl bg-white/[0.08] hover:bg-lava-500 text-xs font-mono uppercase tracking-wider text-white transition">
+                Inspect Network Topology →
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. MY DIGITAL WORLD — МОИ СОЦИАЛЬНЫЕ СЕТИ (INTERACTIVE SOCIAL COMMAND DECK)
+         ===================================================================== -->
+    <section id="socials" class="reveal-item max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 sm:py-28 border-t border-white/[0.07]">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="text-xs font-mono uppercase tracking-[0.22em] text-lava-400 mb-2">
+            03 // MY DIGITAL WORLD &amp; PUBLIC CHANNELS
+          </div>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white" data-i18n="socials_title">
+            MY DIGITAL WORLD — СОЦИАЛЬНЫЕ СЕТИ
+          </h2>
+        </div>
+
+        <!-- Social Category Filter -->
+        <div class="flex flex-wrap gap-2">
+          <button type="button" data-soc-filter="all" class="soc-filter-btn px-3 py-1.5 rounded-xl text-xs font-mono bg-lava-500 text-white font-semibold transition">
+            ВСЕ (09)
+          </button>
+          <button type="button" data-soc-filter="personal" class="soc-filter-btn px-3 py-1.5 rounded-xl text-xs font-mono bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+            ЛИЧНЫЕ ПРОФИЛИ
+          </button>
+          <button type="button" data-soc-filter="picadon" class="soc-filter-btn px-3 py-1.5 rounded-xl text-xs font-mono bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition">
+            ЭКОСИСТЕМА PICADON
+          </button>
+        </div>
+      </div>
+
+      <!-- Social Networks Interactive Grid -->
+      <div id="socials-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Populated and enhanced by JS with full static semantic links -->
+        <!-- 1. Telegram Personal -->
+        <a href="https://t.me/YOSSI_LIVE" target="_blank" rel="noopener noreferrer" data-soc-cat="personal"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#26A5E4]/15 border border-[#26A5E4]/40 flex items-center justify-center text-[#26A5E4] group-hover:scale-110 group-hover:bg-[#26A5E4] group-hover:text-white transition-all">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">Telegram</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.06] text-white/60">DIRECT</span>
+              </div>
+              <div class="text-xs font-mono text-lava-400 mt-0.5">@YOSSI_LIVE</div>
+              <div class="text-xs text-white/50 mt-0.5">Личный контакт и прямая связь</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 2. PicaDon Telegram Channel -->
+        <a href="https://t.me/PicaDon" target="_blank" rel="noopener noreferrer" data-soc-cat="picadon"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-lava-500/15 border border-lava-500/40 flex items-center justify-center text-lava-400 group-hover:scale-110 group-hover:bg-lava-500 group-hover:text-white transition-all">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">PicaDon (Telegram)</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-lava-500/20 text-lava-400">1.27K+</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">t.me/PicaDon</div>
+              <div class="text-xs text-white/50 mt-0.5">Канал о технологиях, Apple, ИИ и гаджетах</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 3. PicaDon MAX Messenger -->
+        <a href="https://max.ru/PicaDon" target="_blank" rel="noopener noreferrer" data-soc-cat="picadon"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/15 border border-purple-500/40 flex items-center justify-center text-purple-400 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all font-syne font-extrabold text-sm">
+              MAX
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">PicaDon (МАКС)</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">CHANNEL</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">max.ru/PicaDon</div>
+              <div class="text-xs text-white/50 mt-0.5">Официальное представительство PicaDon в MAX</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 4. Instagram -->
+        <a href="https://instagram.com/yossi_live" target="_blank" rel="noopener noreferrer" data-soc-cat="personal"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-pink-500/15 border border-pink-500/40 flex items-center justify-center text-pink-400 group-hover:scale-110 group-hover:bg-gradient-to-tr group-hover:from-amber-500 group-hover:via-pink-500 group-hover:to-purple-600 group-hover:text-white transition-all">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">Instagram</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.06] text-white/60">REELS &amp; LIFE</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">@yossi_live</div>
+              <div class="text-xs text-white/50 mt-0.5">Визуальный дневник, сторис и короткие видео</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 5. TikTok -->
+        <a href="https://www.tiktok.com/@yossi_live" target="_blank" rel="noopener noreferrer" data-soc-cat="personal"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-white group-hover:text-obsidian-950 transition-all">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">TikTok</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.06] text-white/60">SHORT VIDEO</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">@yossi_live</div>
+              <div class="text-xs text-white/50 mt-0.5">Вертикальные ролики, техно-разборы и ИИ</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 6. Threads -->
+        <a href="https://www.threads.net/@yossi_live" target="_blank" rel="noopener noreferrer" data-soc-cat="personal"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-lava-500 transition-all font-mono font-bold text-lg">
+              @
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">Threads</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.06] text-white/60">MICROBLOG</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">@yossi_live</div>
+              <div class="text-xs text-white/50 mt-0.5">Мысли, инсайты и обсуждения технологий</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 7. ВКонтакте (VK) -->
+        <a href="https://vk.com/picadon" target="_blank" rel="noopener noreferrer" data-soc-cat="personal"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#0077FF]/15 border border-[#0077FF]/40 flex items-center justify-center text-[#0077FF] group-hover:scale-110 group-hover:bg-[#0077FF] group-hover:text-white transition-all font-display font-bold text-sm">
+              VK
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">ВКонтакте</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#0077FF]/20 text-sky-300">VK ECOSYSTEM</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">vk.com/picadon</div>
+              <div class="text-xs text-white/50 mt-0.5">Публикации и сообщество ВКонтакте</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 8. YouTube (PicaDon | ТЕХНОЛОГИИ) -->
+        <a href="https://www.youtube.com/@picadon" target="_blank" rel="noopener noreferrer" data-soc-cat="picadon"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-red-600/15 border border-red-500/40 flex items-center justify-center text-red-500 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">YouTube</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-red-500/20 text-red-300">VIDEO &amp; SHORTS</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">youtube.com/@picadon</div>
+              <div class="text-xs text-white/50 mt-0.5">PicaDon | ПикаДон • ТЕХНОЛОГИИ</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+
+        <!-- 9. PicaDon AI Bot (MAX) -->
+        <a href="https://max.ru/se13448304_1_bot" target="_blank" rel="noopener noreferrer" data-soc-cat="picadon"
+           class="social-card liquid-glass rounded-2xl p-5 flex items-center justify-between gap-4 group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-crimson-500/15 border border-crimson-500/40 flex items-center justify-center text-crimson-500 group-hover:scale-110 group-hover:bg-crimson-500 group-hover:text-white transition-all font-mono font-bold text-sm">
+              AI
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-base">PicaDon AI Bot</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">ONLINE</span>
+              </div>
+              <div class="text-xs font-mono text-white/70 mt-0.5">max.ru/se13448304_1_bot</div>
+              <div class="text-xs text-white/50 mt-0.5">ChatGPT + Claude + Gemini + Nano Banana в MAX</div>
+            </div>
+          </div>
+          <span class="text-white/35 group-hover:text-lava-400 group-hover:translate-x-1 transition-all font-mono text-sm">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         7. SUPPORT MY WORK — ПОДДЕРЖАТЬ ПРОЕКТЫ (EXACT CRYPTO WALLETS & QR)
+         ===================================================================== -->
+    <section id="support" class="reveal-item max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 sm:py-28 border-t border-white/[0.07]">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="text-xs font-mono uppercase tracking-[0.22em] text-lava-400 mb-2">
+            04 // VOLUNTARY CRYPTO CONTRIBUTION
+          </div>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white" data-i18n="support_title">
+            SUPPORT MY WORK — ПОДДЕРЖАТЬ ПРОЕКТЫ
+          </h2>
+        </div>
+
+        <div class="editorial-surface rounded-2xl px-4 py-3 max-w-md border border-white/10">
+          <p class="text-xs text-white/65 leading-relaxed" data-i18n="support_disclaimer">
+            Поддержка полностью добровольная. Все средства направляются на оплату серверов, сетевой инфраструктуры и развитие новых открытых цифровых экспериментов.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 Verified Crypto Wallets from teitelbaum.ru (100% Verbatim Addresses) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Wallet 1: USDT (TON) -->
+        <div class="liquid-glass rounded-3xl p-6 flex flex-col justify-between gap-5" data-blueprint-tag="WALLET // USDT_TON">
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-2xl bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm">
+                ₮
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">USDT (TON)</h3>
+                <span class="text-[11px] font-mono text-emerald-400">Network: The Open Network (Jetton)</span>
+              </div>
+            </div>
+            <button type="button" data-qr-open="USDT (TON)" data-qr-net="TON Network" data-qr-addr="UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG"
+                    class="p-2.5 rounded-xl bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-white/80 hover:text-lava-400 transition"
+                    title="Показать QR-код кошелька">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm14 3h.01M14 14h3v3h-3v-3zm3 3h4v4h-4v-4zm-3 4h.01" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-obsidian-950/85 border border-white/10">
+            <div class="text-[10px] font-mono uppercase text-white/40 mb-1">VERIFIED WALLET ADDRESS:</div>
+            <div class="font-mono text-xs sm:text-[13px] text-white/95 break-all select-all leading-relaxed">UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG</div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" data-copy-wallet="UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG" data-wallet-label="USDT (TON)"
+                    class="copy-wallet-btn flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 hover:opacity-95 text-xs font-mono font-semibold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition shadow-lg">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>COPY ADDRESS</span>
+            </button>
+            <button type="button" data-qr-open="USDT (TON)" data-qr-net="TON Network" data-qr-addr="UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG"
+                    class="py-3 px-3.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.14] border border-white/10 text-xs font-mono text-white/85 transition">
+              QR
+            </button>
+          </div>
+        </div>
+
+        <!-- Wallet 2: USDT (TRC20) -->
+        <div class="liquid-glass rounded-3xl p-6 flex flex-col justify-between gap-5" data-blueprint-tag="WALLET // USDT_TRC20">
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-2xl bg-red-500/15 border border-red-500/40 flex items-center justify-center text-red-400 font-mono font-bold text-sm">
+                TRX
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">USDT (TRC20)</h3>
+                <span class="text-[11px] font-mono text-red-400">Network: TRON (TRC-20)</span>
+              </div>
+            </div>
+            <button type="button" data-qr-open="USDT (TRC20)" data-qr-net="TRON (TRC-20)" data-qr-addr="TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z"
+                    class="p-2.5 rounded-xl bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-white/80 hover:text-lava-400 transition"
+                    title="Показать QR-код кошелька">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm14 3h.01M14 14h3v3h-3v-3zm3 3h4v4h-4v-4zm-3 4h.01" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-obsidian-950/85 border border-white/10">
+            <div class="text-[10px] font-mono uppercase text-white/40 mb-1">VERIFIED WALLET ADDRESS:</div>
+            <div class="font-mono text-xs sm:text-[13px] text-white/95 break-all select-all leading-relaxed">TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z</div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" data-copy-wallet="TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z" data-wallet-label="USDT (TRC20)"
+                    class="copy-wallet-btn flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 hover:opacity-95 text-xs font-mono font-semibold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition shadow-lg">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>COPY ADDRESS</span>
+            </button>
+            <button type="button" data-qr-open="USDT (TRC20)" data-qr-net="TRON (TRC-20)" data-qr-addr="TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z"
+                    class="py-3 px-3.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.14] border border-white/10 text-xs font-mono text-white/85 transition">
+              QR
+            </button>
+          </div>
+        </div>
+
+        <!-- Wallet 3: TON -->
+        <div class="liquid-glass rounded-3xl p-6 flex flex-col justify-between gap-5" data-blueprint-tag="WALLET // TON_NATIVE">
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-2xl bg-sky-500/15 border border-sky-500/40 flex items-center justify-center text-sky-400 font-mono font-bold text-sm">
+                TON
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">TON</h3>
+                <span class="text-[11px] font-mono text-sky-400">Network: The Open Network (Native)</span>
+              </div>
+            </div>
+            <button type="button" data-qr-open="TON" data-qr-net="The Open Network" data-qr-addr="UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG"
+                    class="p-2.5 rounded-xl bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-white/80 hover:text-lava-400 transition"
+                    title="Показать QR-код кошелька">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm14 3h.01M14 14h3v3h-3v-3zm3 3h4v4h-4v-4zm-3 4h.01" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-obsidian-950/85 border border-white/10">
+            <div class="text-[10px] font-mono uppercase text-white/40 mb-1">VERIFIED WALLET ADDRESS:</div>
+            <div class="font-mono text-xs sm:text-[13px] text-white/95 break-all select-all leading-relaxed">UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG</div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" data-copy-wallet="UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG" data-wallet-label="TON"
+                    class="copy-wallet-btn flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 hover:opacity-95 text-xs font-mono font-semibold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition shadow-lg">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>COPY ADDRESS</span>
+            </button>
+            <button type="button" data-qr-open="TON" data-qr-net="The Open Network" data-qr-addr="UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG"
+                    class="py-3 px-3.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.14] border border-white/10 text-xs font-mono text-white/85 transition">
+              QR
+            </button>
+          </div>
+        </div>
+
+        <!-- Wallet 4: BTC -->
+        <div class="liquid-glass rounded-3xl p-6 flex flex-col justify-between gap-5 md:col-span-1 lg:col-span-1" data-blueprint-tag="WALLET // BTC_BECH32">
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/40 flex items-center justify-center text-amber-400 font-mono font-bold text-sm">
+                ₿
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">BTC</h3>
+                <span class="text-[11px] font-mono text-amber-400">Network: Bitcoin (Native SegWit)</span>
+              </div>
+            </div>
+            <button type="button" data-qr-open="BTC" data-qr-net="Bitcoin Network" data-qr-addr="bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m"
+                    class="p-2.5 rounded-xl bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-white/80 hover:text-lava-400 transition"
+                    title="Показать QR-код кошелька">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm14 3h.01M14 14h3v3h-3v-3zm3 3h4v4h-4v-4zm-3 4h.01" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-obsidian-950/85 border border-white/10">
+            <div class="text-[10px] font-mono uppercase text-white/40 mb-1">VERIFIED WALLET ADDRESS:</div>
+            <div class="font-mono text-xs sm:text-[13px] text-white/95 break-all select-all leading-relaxed">bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m</div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" data-copy-wallet="bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m" data-wallet-label="BTC"
+                    class="copy-wallet-btn flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 hover:opacity-95 text-xs font-mono font-semibold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition shadow-lg">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>COPY ADDRESS</span>
+            </button>
+            <button type="button" data-qr-open="BTC" data-qr-net="Bitcoin Network" data-qr-addr="bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m"
+                    class="py-3 px-3.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.14] border border-white/10 text-xs font-mono text-white/85 transition">
+              QR
+            </button>
+          </div>
+        </div>
+
+        <!-- Wallet 5: ETH (Spans 2 cols on lg for balanced asymmetric row) -->
+        <div class="liquid-glass rounded-3xl p-6 flex flex-col justify-between gap-5 lg:col-span-2" data-blueprint-tag="WALLET // ETH_ERC20">
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-2xl bg-indigo-500/15 border border-indigo-500/40 flex items-center justify-center text-indigo-400 font-mono font-bold text-sm">
+                Ξ
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">ETH (Ethereum)</h3>
+                <span class="text-[11px] font-mono text-indigo-400">Network: Ethereum Mainnet (ERC-20 Compatible)</span>
+              </div>
+            </div>
+            <button type="button" data-qr-open="ETH" data-qr-net="Ethereum (ERC-20)" data-qr-addr="0xCD3DAE075aB28096633123B56848837aDdC05D53"
+                    class="p-2.5 rounded-xl bg-white/[0.06] hover:bg-lava-500/25 border border-white/10 text-white/80 hover:text-lava-400 transition"
+                    title="Показать QR-код кошелька">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm14 3h.01M14 14h3v3h-3v-3zm3 3h4v4h-4v-4zm-3 4h.01" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-obsidian-950/85 border border-white/10">
+            <div class="text-[10px] font-mono uppercase text-white/40 mb-1">VERIFIED WALLET ADDRESS:</div>
+            <div class="font-mono text-xs sm:text-[13px] text-white/95 break-all select-all leading-relaxed">0xCD3DAE075aB28096633123B56848837aDdC05D53</div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" data-copy-wallet="0xCD3DAE075aB28096633123B56848837aDdC05D53" data-wallet-label="ETH"
+                    class="copy-wallet-btn flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 hover:opacity-95 text-xs font-mono font-semibold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition shadow-lg">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>COPY ADDRESS</span>
+            </button>
+            <button type="button" data-qr-open="ETH" data-qr-net="Ethereum (ERC-20)" data-qr-addr="0xCD3DAE075aB28096633123B56848837aDdC05D53"
+                    class="py-3 px-4 rounded-xl bg-white/[0.06] hover:bg-white/[0.14] border border-white/10 text-xs font-mono text-white/85 transition">
+              SHOW QR CODE
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         8. CONTACT — ФИНАЛЬНАЯ СЕКЦИЯ (LET'S BUILD SOMETHING EXTRAORDINARY)
+         ===================================================================== -->
+    <section id="contact" class="reveal-item max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 sm:py-28 border-t border-white/[0.07]">
+      <div class="liquid-glass rounded-[36px] p-8 sm:p-12 lg:p-16 relative overflow-hidden" data-blueprint-tag="CONTACT // DISPATCH_HUB">
+        <!-- Ambient Radial Glow -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-bl from-lava-500/25 via-crimson-500/15 to-transparent blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+
+          <!-- Left 7 Cols: Monumental Call to Action -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.06] border border-white/10 text-xs font-mono text-lava-400">
+              <span>05 // DIRECT COMMUNICATION CHANNEL</span>
+            </div>
+
+            <h2 class="hero-display-title text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-white">
+              LET'S BUILD SOMETHING <span class="lava-gradient-text">EXTRAORDINARY.</span>
+            </h2>
+
+            <p class="text-base sm:text-xl text-white/75 max-w-xl leading-relaxed" data-i18n="contact_subtitle">
+              Have an idea, a project or just want to connect? Let's talk.
+            </p>
+
+            <!-- Primary Required Contact Buttons: GET IN TOUCH & TELEGRAM -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <button id="btn-focus-composer" type="button"
+                      class="magnetic-btn inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-gradient-to-r from-lava-500 to-crimson-500 text-white font-display font-semibold text-sm tracking-wider uppercase shadow-[0_14px_35px_rgba(255,85,0,0.4)] hover:opacity-95 transition">
+                <span data-i18n="contact_btn_touch">GET IN TOUCH</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+
+              <a href="https://t.me/YOSSI_LIVE" target="_blank" rel="noopener noreferrer"
+                 class="magnetic-btn liquid-glass inline-flex items-center gap-3 px-7 py-4 rounded-2xl text-white font-display font-semibold text-sm tracking-wider uppercase hover:border-[#26A5E4]/60 transition">
+                <svg class="w-4 h-4 text-[#26A5E4]" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                <span>TELEGRAM</span>
+              </a>
+            </div>
+
+            <!-- Verified Public Contact Addresses -->
+            <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="editorial-surface rounded-2xl p-4 flex items-center justify-between gap-2">
+                <div>
+                  <div class="text-[10px] font-mono text-white/45 uppercase">PUBLIC EMAIL (PICADON)</div>
+                  <a href="mailto:Yosef-Isroel@PicaDon.ru" class="text-xs sm:text-sm font-mono text-white hover:text-lava-400 transition">
+                    Yosef-Isroel@PicaDon.ru
+                  </a>
+                </div>
+                <button type="button" data-copy-text="Yosef-Isroel@PicaDon.ru" class="p-2 rounded-lg bg-white/[0.05] hover:bg-white/15 text-xs font-mono text-white/70 transition" title="Copy Email">
+                  Copy
+                </button>
+              </div>
+
+              <div class="editorial-surface rounded-2xl p-4 flex items-center justify-between gap-2">
+                <div>
+                  <div class="text-[10px] font-mono text-white/45 uppercase">TELEGRAM CHANNEL &amp; DIRECT</div>
+                  <a href="https://t.me/PicaDon" target="_blank" rel="noopener noreferrer" class="text-xs sm:text-sm font-mono text-white hover:text-lava-400 transition">
+                    @YOSSI_LIVE • @PicaDon
+                  </a>
+                </div>
+                <button type="button" data-copy-text="@YOSSI_LIVE" class="p-2 rounded-lg bg-white/[0.05] hover:bg-white/15 text-xs font-mono text-white/70 transition" title="Copy Telegram Handle">
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 5 Cols: Interactive Direct Dispatch Form (Opens Telegram or Email with Formatted Payload) -->
+          <div class="lg:col-span-5">
+            <form id="contact-dispatch-form" class="editorial-surface rounded-3xl p-6 space-y-4 border border-white/10">
+              <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-white/80" data-i18n="form_title">БЫСТРАЯ ОТПРАВКА СООБЩЕНИЯ</span>
+                <span class="text-[10px] font-mono text-emerald-400">● DIRECT DISPATCH</span>
+              </div>
+
+              <div>
+                <label for="sender-name" class="block text-[11px] font-mono uppercase text-white/55 mb-1.5" data-i18n="form_name">Ваше имя / Проект</label>
+                <input id="sender-name" type="text" required placeholder="Александр / Tech Startup"
+                       class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-950/90 border border-white/10 text-sm text-white placeholder-white/30 focus:outline-none focus:border-lava-500 transition" />
+              </div>
+
+              <div>
+                <label for="sender-topic" class="block text-[11px] font-mono uppercase text-white/55 mb-1.5" data-i18n="form_topic">Направление</label>
+                <select id="sender-topic" class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-950/90 border border-white/10 text-sm text-white focus:outline-none focus:border-lava-500 transition">
+                  <option value="Сотрудничество / Совместный проект">Сотрудничество / Совместный проект</option>
+                  <option value="Экосистема PicaDon &amp; Реклама">Экосистема PicaDon &amp; Реклама</option>
+                  <option value="Разработка ИИ-бота / Telegram Mini App">Разработка ИИ-бота / Telegram Mini App</option>
+                  <option value="Сетевая инфраструктура / OpenWrt / Серверы">Сетевая инфраструктура / OpenWrt / Серверы</option>
+                  <option value="Личное сообщение">Личное сообщение</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="sender-msg" class="block text-[11px] font-mono uppercase text-white/55 mb-1.5" data-i18n="form_msg">Сообщение</label>
+                <textarea id="sender-msg" rows="3" required placeholder="Опишите идею, задачу или предложение..."
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-950/90 border border-white/10 text-sm text-white placeholder-white/30 focus:outline-none focus:border-lava-500 transition"></textarea>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2.5 pt-1">
+                <button type="submit" data-dispatch-mode="telegram"
+                        class="py-3 px-4 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 hover:opacity-95 text-xs font-mono font-semibold uppercase tracking-wider text-white transition">
+                  Send via Telegram ↗
+                </button>
+                <button type="button" id="btn-send-email"
+                        class="py-3 px-4 rounded-xl bg-white/[0.07] hover:bg-white/[0.15] border border-white/10 text-xs font-mono uppercase tracking-wider text-white transition">
+                  Send via Email ✉
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-white/[0.08] py-10 px-4 sm:px-6 lg:px-10 bg-obsidian-950/90">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-white/50">
+      <div class="flex items-center gap-3">
+        <span class="font-syne font-bold text-white tracking-wider">TEITELBAUM.RU</span>
+        <span>—</span>
+        <span>© 2026 Yosef-Isroel Teitelbaum. All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#hero" class="hover:text-lava-400 transition">↑ Back to Top</a>
+        <a href="https://t.me/PicaDon" target="_blank" rel="noopener noreferrer" class="hover:text-lava-400 transition">@PicaDon</a>
+        <a href="https://max.ru/PicaDon" target="_blank" rel="noopener noreferrer" class="hover:text-lava-400 transition">MAX</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       MODAL 1: PROJECT DEEP-DIVE & INTERACTIVE LAB MODAL
+       ===================================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-[140] hidden items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-xl" role="dialog" aria-modal="true" aria-labelledby="modal-proj-title">
+    <div class="liquid-glass rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-white/20 p-6 sm:p-8 relative shadow-2xl">
+      <button id="btn-close-proj-modal" type="button" aria-label="Close Modal"
+              class="sticky top-0 float-right w-10 h-10 rounded-xl bg-white/10 hover:bg-lava-500 text-white flex items-center justify-center transition z-20">
+        ✕
+      </button>
+      <div id="project-modal-body" class="space-y-6"></div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MODAL 2: CRYPTO WALLET QR CODE MODAL
+       ===================================================================== -->
+  <div id="qr-modal" class="fixed inset-0 z-[145] hidden items-center justify-center p-4 bg-black/80 backdrop-blur-xl" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="liquid-glass rounded-3xl max-w-md w-full p-6 sm:p-8 border border-white/20 text-center space-y-5 relative shadow-2xl">
+      <button id="btn-close-qr-modal" type="button" aria-label="Close QR Modal"
+              class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-white/10 hover:bg-lava-500 text-white flex items-center justify-center transition">
+        ✕
+      </button>
+
+      <div>
+        <div id="qr-modal-net" class="text-xs font-mono uppercase tracking-widest text-lava-400">NETWORK</div>
+        <h3 id="qr-modal-title" class="text-2xl font-display font-bold text-white mt-1">USDT (TON)</h3>
+      </div>
+
+      <!-- Scannable QR Container -->
+      <div id="qr-code-box" class="mx-auto w-56 h-56 rounded-2xl bg-white p-4 flex items-center justify-center shadow-inner"></div>
+
+      <div class="p-3.5 rounded-2xl bg-obsidian-950/90 border border-white/10 text-left">
+        <div class="text-[10px] font-mono text-white/40 uppercase mb-1">EXACT WALLET ADDRESS:</div>
+        <div id="qr-modal-addr" class="font-mono text-xs text-white break-all select-all"></div>
+      </div>
+
+      <button id="btn-qr-copy" type="button"
+              class="w-full py-3.5 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 text-white font-mono text-xs font-semibold uppercase tracking-wider shadow-lg hover:opacity-95 transition">
+        COPY WALLET ADDRESS
+      </button>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       APPLICATION JAVASCRIPT (INTERACTIVITY, SELF-ASSEMBLY, MODALS, QR, I18N)
+       ===================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      // --- 1. Toast Notification Helper ---
+      function showToast(message, subtitle) {
+        var container = document.getElementById('toast-container');
+        if (!container) return;
+        var toast = document.createElement('div');
+        toast.className = 'liquid-glass px-4 py-3 rounded-2xl border border-lava-500/50 shadow-2xl flex items-center gap-3 transform translate-y-2 opacity-0 transition-all duration-300 pointer-events-auto';
+        toast.innerHTML =
+          '<div class="w-7 h-7 rounded-xl bg-lava-500/20 border border-lava-500/40 flex items-center justify-center text-lava-400 font-mono text-xs">✓</div>' +
+          '<div>' +
+            '<div class="text-xs font-semibold text-white">' + message + '</div>' +
+            (subtitle ? '<div class="text-[10px] font-mono text-white/60 truncate max-w-[220px]">' + subtitle + '</div>' : '') +
+          '</div>';
+        container.appendChild(toast);
+        requestAnimationFrame(function () {
+          toast.classList.remove('translate-y-2', 'opacity-0');
+        });
+        setTimeout(function () {
+          toast.classList.add('translate-y-2', 'opacity-0');
+          setTimeout(function () {
+            if (toast.parentNode) toast.parentNode.removeChild(toast);
+          }, 300);
+        }, 2800);
+      }
+
+      // --- 2. Reliable Clipboard Copy ---
+      function copyTextToClipboard(text, label) {
+        function onSuccess() {
+          showToast('Адрес скопирован! / Copied!', (label ? label + ': ' : '') + text);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(onSuccess).catch(function () {
+            fallbackCopy(text, onSuccess);
+          });
+        } else {
+          fallbackCopy(text, onSuccess);
+        }
+      }
+
+      function fallbackCopy(text, callback) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try {
+          document.execCommand('copy');
+          if (callback) callback();
+        } catch (err) {}
+        document.body.removeChild(ta);
+      }
+
+      // --- 3. Live Moscow Clock ---
+      function updateClock() {
+        var el = document.getElementById('live-clock');
+        if (!el) return;
+        try {
+          var now = new Date();
+          var msk = now.toLocaleTimeString('ru-RU', { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+          el.textContent = 'MSK ' + msk + ' // ONLINE';
+        } catch (e) {
+          el.textContent = 'MSK UTC+3 // ONLINE';
+        }
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // --- 4. Custom Interactive Cursor & Specular Glass Lighting ---
+      var cursorDot = document.getElementById('custom-cursor-dot');
+      var cursorRing = document.getElementById('custom-cursor-ring');
+      var cursorLabel = document.getElementById('cursor-label');
+      var portraitCard = document.getElementById('parallax-portrait-card');
+
+      window.addEventListener('mousemove', function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        document.documentElement.style.setProperty('--mx', x + 'px');
+        document.documentElement.style.setProperty('--my', y + 'px');
+
+        if (cursorDot && cursorRing) {
+          cursorDot.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+          cursorRing.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+        }
+
+        // Update local card specular reflection coordinates
+        var cards = document.querySelectorAll('.liquid-glass');
+        for (var i = 0; i < cards.length; i++) {
+          var rect = cards[i].getBoundingClientRect();
+          if (y >= rect.top - 100 && y <= rect.bottom + 100) {
+            cards[i].style.setProperty('--card-mx', (x - rect.left) + 'px');
+            cards[i].style.setProperty('--card-my', (y - rect.top) + 'px');
+          }
+        }
+
+        // Subtle 3D Parallax on Hero Portrait Monolith
+        if (portraitCard && window.innerWidth >= 1024) {
+          var pRect = portraitCard.getBoundingClientRect();
+          var cx = pRect.left + pRect.width / 2;
+          var cy = pRect.top + pRect.height / 2;
+          var dx = (x - cx) / (window.innerWidth / 2);
+          var dy = (y - cy) / (window.innerHeight / 2);
+          var rotY = Math.max(-7, Math.min(7, dx * 6));
+          var rotX = Math.max(-7, Math.min(7, -dy * 6));
+          portraitCard.style.transform = 'perspective(1000px) rotateX(' + rotX.toFixed(2) + 'deg) rotateY(' + rotY.toFixed(2) + 'deg)';
+        }
+      });
+
+      // Magnetic Buttons
+      var magBtns = document.querySelectorAll('.magnetic-btn');
+      magBtns.forEach(function (btn) {
+        btn.addEventListener('mousemove', function (e) {
+          if (window.innerWidth < 1024) return;
+          var r = btn.getBoundingClientRect();
+          var dx = (e.clientX - (r.left + r.width / 2)) * 0.18;
+          var dy = (e.clientY - (r.top + r.height / 2)) * 0.18;
+          btn.style.transform = 'translate3d(' + dx.toFixed(1) + 'px, ' + dy.toFixed(1) + 'px, 0)';
+        });
+        btn.addEventListener('mouseleave', function () {
+          btn.style.transform = 'translate3d(0, 0, 0)';
+        });
+      });
+
+      // Cursor Hover Expansion on Interactive Elements
+      document.querySelectorAll('a, button, .project-card').forEach(function (el) {
+        el.addEventListener('mouseenter', function () {
+          if (!cursorRing) return;
+          cursorRing.style.width = '54px';
+          cursorRing.style.height = '54px';
+          cursorRing.style.marginLeft = '-27px';
+          cursorRing.style.marginTop = '-27px';
+          cursorRing.style.borderColor = 'rgba(255, 85, 0, 0.75)';
+          var txt = el.getAttribute('data-cursor-text');
+          if (cursorLabel && txt) {
+            cursorLabel.textContent = txt;
+            cursorLabel.style.opacity = '1';
+          }
+        });
+        el.addEventListener('mouseleave', function () {
+          if (!cursorRing) return;
+          cursorRing.style.width = '36px';
+          cursorRing.style.height = '36px';
+          cursorRing.style.marginLeft = '-18px';
+          cursorRing.style.marginTop = '-18px';
+          cursorRing.style.borderColor = 'rgba(255, 255, 255, 0.25)';
+          if (cursorLabel) {
+            cursorLabel.textContent = '';
+            cursorLabel.style.opacity = '0';
+          }
+        });
+      });
+
+      // --- 5. SELF-ASSEMBLING INTERFACE SCENE ("Эффект постепенного создания интерфейса") ---
+      var assemblyTimers = [];
+      function clearAssemblyTimers() {
+        while (assemblyTimers.length) {
+          clearTimeout(assemblyTimers.pop());
+        }
+      }
+
+      function finishAssembly() {
+        clearAssemblyTimers();
+        document.body.classList.remove('is-assembling');
+        var overlay = document.getElementById('architect-overlay');
+        if (overlay) overlay.classList.add('hidden');
+        document.querySelectorAll('.assemble-target').forEach(function (el) {
+          el.classList.remove('assemble-waiting', 'assemble-locking');
+        });
+      }
+
+      function runSelfAssemblingScene() {
+        clearAssemblyTimers();
+        var overlay = document.getElementById('architect-overlay');
+        var archCursor = document.getElementById('architect-cursor');
+        var stepCode = document.getElementById('architect-step-code');
+        var coords = document.getElementById('architect-coords');
+        var actionText = document.getElementById('architect-action-text');
+        var bar = document.getElementById('assembly-bar');
+        var pct = document.getElementById('assembly-pct');
+
+        var navEl = document.getElementById('nav-container');
+        var statusEl = document.getElementById('hero-status-bar');
+        var typoEl = document.getElementById('hero-typography-block');
+        var portraitEl = document.getElementById('hero-portrait-block');
+
+        var targets = [navEl, statusEl, typoEl, portraitEl];
+        document.body.classList.add('is-assembling');
+        targets.forEach(function (t) {
+          if (t) {
+            t.classList.add('assemble-waiting');
+            t.classList.remove('assemble-locking');
+          }
         });
 
-        // Функция копирования с Toast-уведомлением
-        let toastTimeout;
-        function copyCrypto(text, btn, currencyName) {
-            navigator.clipboard.writeText(text).then(() => {
-                const icon = btn.querySelector('i');
-                const span = btn.querySelector('span');
-                const originalIconClass = icon.className;
-                const originalText = span ? span.innerText : '';
+        if (overlay) overlay.classList.remove('hidden');
 
-                btn.classList.add('copied');
-                icon.className = 'fa-solid fa-check';
-                if (span) span.innerText = 'OK';
+        var steps = [
+          {
+            delay: 50,
+            target: navEl,
+            x: '50%',
+            y: '46px',
+            code: 'ARCHITECT // 01',
+            coordText: 'X:640 Y:32',
+            msg: 'Mounting Liquid Glass Navigation...',
+            progress: 25
+          },
+          {
+            delay: 680,
+            target: statusEl,
+            x: '32%',
+            y: '140px',
+            code: 'ARCHITECT // 02',
+            coordText: 'X:310 Y:140',
+            msg: 'Typing Status: INDEPENDENT DIGITAL CREATOR',
+            progress: 50
+          },
+          {
+            delay: 1350,
+            target: typoEl,
+            x: '36%',
+            y: '48%',
+            code: 'ARCHITECT // 03',
+            coordText: 'X:420 Y:390',
+            msg: 'Compiling Kinetic Headline & CTA...',
+            progress: 78
+          },
+          {
+            delay: 2050,
+            target: portraitEl,
+            x: '74%',
+            y: '48%',
+            code: 'ARCHITECT // 04',
+            coordText: 'X:980 Y:410',
+            msg: 'Locking Portrait Monolith & Refraction...',
+            progress: 100
+          }
+        ];
 
-                // Показ всплывающего Toast
-                const toast = document.getElementById('toast');
-                const toastText = document.getElementById('toast-text');
-                toastText.innerText = `${currencyName} скопирован в буфер`;
-                toast.classList.add('show');
+        steps.forEach(function (st) {
+          var tId = setTimeout(function () {
+            if (archCursor) {
+              archCursor.style.left = st.x;
+              archCursor.style.top = st.y;
+            }
+            if (stepCode) stepCode.textContent = st.code;
+            if (coords) coords.textContent = st.coordText;
+            if (actionText) actionText.textContent = st.msg;
+            if (bar) bar.style.width = st.progress + '%';
+            if (pct) pct.textContent = st.progress + '%';
 
-                clearTimeout(toastTimeout);
-                toastTimeout = setTimeout(() => {
-                    toast.classList.remove('show');
-                }, 2400);
-
-                setTimeout(() => {
-                    btn.classList.remove('copied');
-                    icon.className = originalIconClass;
-                    if (span) span.innerText = originalText;
-                }, 1800);
+            targets.forEach(function (el) {
+              if (el) el.classList.remove('assemble-locking');
             });
+            if (st.target) {
+              st.target.classList.remove('assemble-waiting');
+              st.target.classList.add('assemble-locking');
+            }
+          }, st.delay);
+          assemblyTimers.push(tId);
+        });
+
+        var endId = setTimeout(function () {
+          finishAssembly();
+          showToast('TEITELBAUM.RU // SYSTEM READY', 'Liquid Glass UI собрана и активна');
+        }, 2750);
+        assemblyTimers.push(endId);
+      }
+
+      // Bind Replay & Skip buttons
+      var btnReplay = document.getElementById('btn-replay-assembly');
+      var btnHeroAssemble = document.getElementById('btn-hero-assemble');
+      var btnMobileReplay = document.getElementById('btn-mobile-replay');
+      var btnSkip = document.getElementById('btn-skip-assembly');
+
+      if (btnReplay) btnReplay.addEventListener('click', runSelfAssemblingScene);
+      if (btnHeroAssemble) btnHeroAssemble.addEventListener('click', runSelfAssemblingScene);
+      if (btnMobileReplay) {
+        btnMobileReplay.addEventListener('click', function () {
+          var sheet = document.getElementById('mobile-menu-sheet');
+          if (sheet) sheet.classList.add('hidden');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          runSelfAssemblingScene();
+        });
+      }
+      if (btnSkip) btnSkip.addEventListener('click', finishAssembly);
+
+      // Auto-run once on initial load if reduced motion is not requested
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReduced) {
+        setTimeout(runSelfAssemblingScene, 180);
+      }
+
+      // --- 6. Blueprint / Architectural Grid Toggle ---
+      var btnBlueprint = document.getElementById('btn-toggle-blueprint');
+      if (btnBlueprint) {
+        btnBlueprint.addEventListener('click', function () {
+          var active = document.body.classList.toggle('blueprint-mode');
+          btnBlueprint.classList.toggle('text-lava-400', active);
+          btnBlueprint.classList.toggle('border-lava-500/50', active);
+          showToast(
+            active ? 'ARCHITECTURAL GRID: ON' : 'ARCHITECTURAL GRID: OFF',
+            active ? 'Режим инженерной сетки и инспектора слоёв включён' : 'Стандартный режим Liquid Glass'
+          );
+        });
+      }
+
+      // --- 7. Hero Headline Mode Switcher ---
+      var headlineModes = {
+        signature: {
+          l1: 'BUILDING IDEAS.',
+          l2: 'CREATING DIGITAL',
+          l3: 'EXPERIENCES.'
+        },
+        authorial: {
+          l1: 'BEYOND TEMPLATES.',
+          l2: 'ENGINEERING LIVING',
+          l3: 'DIGITAL SYSTEMS.'
+        },
+        russian: {
+          l1: 'СОЗДАВАЯ ИДЕИ.',
+          l2: 'ПРОЕКТИРУЯ ЦИФРОВУЮ',
+          l3: 'РЕАЛЬНОСТЬ.'
         }
-    </script>
+      };
+
+      document.querySelectorAll('.headline-mode-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var mode = btn.getAttribute('data-headline-mode');
+          var data = headlineModes[mode];
+          if (!data) return;
+          document.getElementById('hero-line-1').textContent = data.l1;
+          document.getElementById('hero-line-2').textContent = data.l2;
+          document.getElementById('hero-line-3').textContent = data.l3;
+
+          document.querySelectorAll('.headline-mode-btn').forEach(function (b) {
+            b.className = 'headline-mode-btn px-2.5 py-1 rounded-lg text-[11px] font-mono bg-white/[0.04] text-white/60 hover:text-white border border-white/10 transition';
+          });
+          btn.className = 'headline-mode-btn px-2.5 py-1 rounded-lg text-[11px] font-mono bg-lava-500/20 text-lava-400 border border-lava-500/40 transition';
+        });
+      });
+
+      // --- 8. About Me Interactive Tabs ---
+      var aboutTabsData = {
+        ai: {
+          title: 'Искусственный интеллект, Боты и Telegram Mini Apps',
+          badge: 'ACTIVE FOCUS',
+          desc: 'Создание коммерческих и экспериментальных ботов в Telegram и мессенджере MAX (включая мультимодельный агрегатор PicaDon AI через OpenRouter API и ЮKassa), проектирование интерфейсов в эстетике Apple Liquid Glass и генеративные видео/аудио эксперименты (Google Flow, Veo, HeyGen, ElevenLabs).',
+          tags: ['OpenRouter API', 'Node.js & SQLite', 'Telegram WebApp API', 'MAX Bot API', 'Google AI Studio & Veo']
+        },
+        infra: {
+          title: 'Сетевая инфраструктура, OpenWrt и Linux VPS',
+          badge: 'INFRASTRUCTURE LAB',
+          desc: 'Развёртывание отказоустойчивых узлов связи на базе Ubuntu 26.04 LTS (Aeza VPS), настройка протоколов VLESS Reality, AmneziaWG 3.1 и Xray-core, а также кастомная прошивка роутеров (Xiaomi AX3000T, SmartBox Giga) на базе OpenWrt 25.12 с маршрутизацией Mihomo / OpenClash и шифрованным DNS AdGuard Home.',
+          tags: ['OpenWrt 25.12', 'VLESS Reality', 'AmneziaWG 3.1', 'Mihomo / OpenClash', 'Ubuntu VPS & Nginx', 'Cloudflare DNS']
+        },
+        hardware: {
+          title: 'Технологическое предпринимательство, Медиа и Hardware',
+          badge: 'FOUNDER & CREATOR',
+          desc: 'Развитие медийной экосистемы PicaDon (@PicaDon в Telegram и MAX, YouTube-канал PicaDon | ТЕХНОЛОГИИ), цифровизация процессов и медиа для Иешивы «Торат Хаим», а также компонентная диагностика, кастомизация и ремонт мобильного оборудования (iPhone / Android hardware).',
+          tags: ['PicaDon Media', 'Torat Chaim Digital', 'Mobile Hardware Diagnostics', 'Apple & Android Ecosystems', 'Brand Direction']
+        }
+      };
+
+      document.querySelectorAll('.about-tab-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var key = btn.getAttribute('data-about-tab');
+          var info = aboutTabsData[key];
+          if (!info) return;
+          document.getElementById('about-tab-title').textContent = info.title;
+          document.getElementById('about-tab-badge').textContent = info.badge;
+          document.getElementById('about-tab-desc').textContent = info.desc;
+          var tagsBox = document.getElementById('about-tab-tags');
+          tagsBox.innerHTML = info.tags.map(function (t) {
+            return '<span class="px-2.5 py-1 rounded-lg bg-white/[0.05] text-[11px] font-mono text-white/80">' + t + '</span>';
+          }).join('');
+
+          document.querySelectorAll('.about-tab-btn').forEach(function (b) {
+            b.className = 'about-tab-btn px-3.5 py-2 rounded-xl text-xs font-mono font-medium bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition';
+          });
+          btn.className = 'about-tab-btn px-3.5 py-2 rounded-xl text-xs font-mono font-medium bg-lava-500 text-white shadow-lg transition';
+        });
+      });
+
+      // --- 9. Interactive CLI Terminal in About Section ---
+      var termOut = document.getElementById('terminal-output');
+      var termCommands = {
+        stack: 'Frontend: Next.js, React, TypeScript, Tailwind CSS, Liquid Glass UI\nBackend & Bots: Node.js, Python 3, SQLite, Firebase Realtime DB, OpenRouter API\nInfra: Ubuntu 26.04 LTS, Nginx, Docker, OpenWrt 25.12, Xray VLESS, AmneziaWG',
+        network: 'Edge Router: Xiaomi Mi Router AX3000T (OpenWrt 25.12)\nSplit-Tunneling: Mihomo / OpenClash + Podkop (RU-Direct / Proxy)\nDNS Security: AdGuard Home (DoH / DoT)\nCloud Core: Aeza VPS -> VLESS Reality & AmneziaWG 3.1',
+        projects: '01. PicaDon & PicaDon+ (t.me/PicaDon | max.ru/PicaDon | picadon-tech.ru)\n02. PicaDon AI Bot (max.ru/se13448304_1_bot)\n03. Torat Chaim Digital (eshiva.ru)\n04. FrostClick Telegram Mini App\n05. Network & OpenWrt Infrastructure Lab',
+        wallets: 'USDT (TON): UQCHOri792xOledMWaAmvqi55kmz7M8-uAJ1Gu9xDrwF3zbG\nUSDT (TRC20): TJnkUHc1epoWnJz72Guf6721uEYTBUKp4z\nBTC: bc1qnxt4yxe6sc0m24gt0suhrp7enspf9psmce5a7m\nETH: 0xCD3DAE075aB28096633123B56848837aDdC05D53'
+      };
+
+      document.querySelectorAll('.term-cmd-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var cmd = btn.getAttribute('data-term-cmd');
+          if (!termOut) return;
+          if (cmd === 'clear') {
+            termOut.innerHTML = '<div class="text-white/50"># Terminal cleared. Click a command below:</div>';
+            return;
+          }
+          var resp = termCommands[cmd] || 'Command executed.';
+          var entry = document.createElement('div');
+          entry.className = 'space-y-1 pt-1 border-t border-white/5';
+          entry.innerHTML =
+            '<div><span class="text-lava-400">yosef@teitelbaum:~$</span> ./' + cmd + '</div>' +
+            '<pre class="text-white/85 pl-2 whitespace-pre-wrap font-mono text-[11px] leading-relaxed">' + resp + '</pre>';
+          termOut.appendChild(entry);
+          termOut.scrollTop = termOut.scrollHeight;
+        });
+      });
+
+      // --- 10. Projects Filtering & Deep-Dive Modals ---
+      document.querySelectorAll('.proj-filter-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var filter = btn.getAttribute('data-proj-filter');
+          document.querySelectorAll('.proj-filter-btn').forEach(function (b) {
+            b.className = 'proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition';
+          });
+          btn.className = 'proj-filter-btn px-3.5 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-lava-500 text-white font-semibold transition';
+
+          document.querySelectorAll('.project-card').forEach(function (card) {
+            var cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      var projectDetails = {
+        picadon: {
+          code: '01 // FLAGSHIP DIGITAL ECOSYSTEM',
+          title: 'PICADON & PICADON+',
+          status: 'ACTIVE • PRODUCTION',
+          summary: 'Авторская технологическая экосистема Йосефа-Исроэля Тейтельбаума, объединяющая медиа-ресурсы о современных технологиях в Telegram и MAX с приватной сетевой инфраструктурой PicaDon+ и личным кабинетом клиента в эстетике Apple Liquid Glass.',
+          highlights: [
+            'Медиа-канал @PicaDon в Telegram (1 270+ подписчиков, почти 3 000 фото- и видеоматериалов) и официальное представительство в мессенджере MAX (max.ru/PicaDon).',
+            'Сетевая инфраструктура PicaDon+ на базе домена picadon-tech.ru (Cloudflare + Ubuntu 26.04 LTS VPS) с поддержкой протоколов VLESS Reality и AmneziaWG 3.1.',
+            'Личный кабинет клиента PicaDon VPN Dashboard в дизайн-системе Apple Liquid Glass: управление подпиской, выбор серверов, генерация QR-кодов и ключей для iOS, Android, macOS, Windows и Linux.'
+          ],
+          stack: ['Telegram & MAX', 'picadon-tech.ru', 'VLESS Reality', 'AmneziaWG 3.1', 'Next.js & Liquid Glass UI', 'Ubuntu VPS'],
+          links: [
+            { label: 'PicaDon в Telegram ↗', url: 'https://t.me/PicaDon' },
+            { label: 'PicaDon в МАКС ↗', url: 'https://max.ru/PicaDon' }
+          ]
+        },
+        ai: {
+          code: '02 // GENERATIVE AI & BOT ENGINEERING',
+          title: 'PICADON AI & AI EXPERIMENTS',
+          status: 'ACTIVE • LIVE IN MAX (@se13448304_1_bot)',
+          summary: 'Полноценный коммерческий ИИ-бот агрегатор нейросетей в мессенджере MAX и исследовательская лаборатория генеративного контента (текст, код, изображения, ИИ-видео и клонирование голоса).',
+          highlights: [
+            'Бот @se13448304_1_bot на стеке Node.js + SQLite (better-sqlite3) с прямой интеграцией MAX Bot API (platform-api2.max.ru) и OpenRouter API.',
+            'Маршрутизация быстрых и продвинутых моделей: Google Gemini, Anthropic Claude, OpenAI GPT, DeepSeek, Perplexity Sonar и режим ИИ-Агента (Gemma 4).',
+            'Генерация изображений (Nano Banana) и автоматический рекуррентный биллинг подписки Plus через ЮKassa API v3.',
+            'Эксперименты с генеративным видео и переводом: Google Flow (Veo 3.1), HeyGen AI Video Translation и ElevenLabs Voice Synthesis.'
+          ],
+          stack: ['Node.js 22 LTS', 'SQLite', 'MAX Bot API', 'OpenRouter API', 'ЮKassa API v3', 'Google Flow & Veo', 'HeyGen & ElevenLabs'],
+          links: [
+            { label: 'Открыть PicaDon AI в MAX ↗', url: 'https://max.ru/se13448304_1_bot' },
+            { label: 'Документация MAX API ↗', url: 'https://dev.max.ru/docs-api' }
+          ]
+        },
+        toratchaim: {
+          code: '03 // INSTITUTIONAL DIGITALIZATION',
+          title: 'TORAT CHAIM DIGITAL',
+          status: 'ACTIVE • INSTITUTIONAL INITIATIVE',
+          summary: 'Цифровые инициативы, автоматизация учётных процессов и медиа-сопровождение для духовной академии (Иешивы) «Торат Хаим» в Московской области.',
+          highlights: [
+            'Проектирование и ведение многоуровневой облачной базы данных («Расширенная база данных Иешивы Торат Хаим») для структурирования контингента учащихся и бэк-офиса.',
+            'Техническое сопровождение и визуальный дизайн новостного канала «Торат-Хаим ⭕LIVE».',
+            'Разработка и верстка расписаний (зманим, Шаббат, праздничные циклы Пурим, Лаг ба-Омер, Суккот) и переводов специализированных изданий.'
+          ],
+          stack: ['Google Workspace Architecture', 'Data Structuring', 'Torat-Chaim LIVE Media', 'Editorial Design'],
+          links: [
+            { label: 'Официальный сайт Иешивы ↗', url: 'https://eshiva.ru/' }
+          ]
+        },
+        frostclick: {
+          code: '04 // TELEGRAM MINI APP (TMA)',
+          title: 'FROSTCLICK — INTERACTIVE MINI APP',
+          status: 'EXPERIMENTAL PROTOTYPE • TMA',
+          summary: 'Интерактивный цифровой продукт внутри экосистемы Telegram Mini Apps (линейка концептов FrostClick / Iceberg) с акцентом на мгновенный отклик интерфейса, тактильную отдачу и облачную синхронизацию.',
+          highlights: [
+            'Интеграция с нативным Telegram WebApp SDK (инициализация сессии, адаптация под системные темы Telegram, вызов HapticFeedback при каждом взаимодействии).',
+            'Синхронизация игрового прогресса и состояния пользователя через Firebase Realtime Database.',
+            'Кристаллическая зимняя визуальная эстетика с плавными 60fps-анимациями на мобильных устройствах Android и iOS.'
+          ],
+          stack: ['Telegram WebApp API', 'JavaScript / React', 'Firebase Realtime DB', 'Haptic Engine', 'Mobile-First UI'],
+          interactiveDemo: 'frostclick',
+          links: []
+        },
+        network: {
+          code: '05 // SYSTEMS & EDGE ROUTING LAB',
+          title: 'NETWORK & INFRASTRUCTURE',
+          status: 'ONGOING LAB • OPENWRT & VPS',
+          summary: 'Инженерная лаборатория сетевой инфраструктуры: от кастомных прошивок домашних и офисных маршрутизаторов OpenWrt до защищённых зарубежных VPS-узлов и аппаратной диагностики.',
+          highlights: [
+            'Кастомизация роутеров Xiaomi Mi Router AX3000T, TP-Link и Beeline SmartBox Giga на базе сборок OpenWrt 25.12.',
+            'Интеллектуальная маршрутизация трафика (Split-Tunneling RU-Direct / Proxy) с использованием ядер Mihomo / OpenClash и Podkop.',
+            'Локальная фильтрация и шифрование DNS-запросов через AdGuard Home (DoH / DoT) и настройка профилей для клиентов Happ, Karing, v2rayNG и Clash Verge Rev.',
+            'Серверная часть на Ubuntu 26.04 LTS с контейнерами AmneziaWG 3.1 и панелями управления 3x-ui / Xray-core.'
+          ],
+          stack: ['OpenWrt 25.12', 'Xiaomi AX3000T', 'Mihomo / OpenClash', 'AdGuard Home', 'Xray VLESS Reality', 'AmneziaWG 3.1'],
+          interactiveDemo: 'network',
+          links: []
+        }
+      };
+
+      var projModal = document.getElementById('project-modal');
+      var projModalBody = document.getElementById('project-modal-body');
+      var btnCloseProjModal = document.getElementById('btn-close-proj-modal');
+
+      function openProjectModal(projId) {
+        var p = projectDetails[projId];
+        if (!p || !projModal || !projModalBody) return;
+
+        var extraHtml = '';
+        if (p.interactiveDemo === 'frostclick') {
+          extraHtml =
+            '<div class="editorial-surface rounded-2xl p-5 border border-sky-500/30 space-y-3">' +
+              '<div class="flex items-center justify-between">' +
+                '<span class="text-xs font-mono uppercase text-sky-400">❄️ INTERACTIVE FROSTCLICK TMA SIMULATOR</span>' +
+                '<span id="frost-energy-label" class="text-xs font-mono text-white/70">ENERGY: 100/100</span>' +
+              '</div>' +
+              '<div class="flex items-center justify-between gap-4 py-2">' +
+                '<div>' +
+                  '<div class="text-[11px] font-mono text-white/50">FROST CRYSTALS MINED</div>' +
+                  '<div id="frost-counter" class="text-3xl font-display font-bold text-white">1,240 ❄️</div>' +
+                '</div>' +
+                '<button type="button" id="btn-frost-tap" class="px-6 py-4 rounded-2xl bg-gradient-to-r from-sky-500 to-lava-500 text-white font-display font-bold text-sm uppercase tracking-wider active:scale-95 transition shadow-lg select-none">' +
+                  'TAP CRYSTAL (+15)' +
+                '</button>' +
+              '</div>' +
+            '</div>';
+        } else if (p.interactiveDemo === 'network') {
+          extraHtml =
+            '<div class="editorial-surface rounded-2xl p-5 border border-emerald-500/30 space-y-3 font-mono text-xs">' +
+              '<div class="text-emerald-400 uppercase">🌐 LIVE ROUTING TOPOLOGY SCHEMA</div>' +
+              '<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-center">' +
+                '<div class="p-3 rounded-xl bg-white/[0.04] border border-white/10">' +
+                  '<div class="text-white font-bold">1. EDGE ROUTER</div>' +
+                  '<div class="text-[11px] text-white/60 mt-1">Xiaomi AX3000T<br/>OpenWrt 25.12 + AdGuard</div>' +
+                '</div>' +
+                '<div class="p-3 rounded-xl bg-lava-500/15 border border-lava-500/30">' +
+                  '<div class="text-lava-400 font-bold">2. SPLIT ENGINE</div>' +
+                  '<div class="text-[11px] text-white/70 mt-1">Mihomo / Podkop<br/>RU-Direct • Global Tunnel</div>' +
+                '</div>' +
+                '<div class="p-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30">' +
+                  '<div class="text-emerald-400 font-bold">3. CLOUD NODE</div>' +
+                  '<div class="text-[11px] text-white/70 mt-1">Ubuntu 26.04 VPS<br/>VLESS Reality / AWG 3.1</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>';
+        }
+
+        var linksHtml = '';
+        if (p.links && p.links.length) {
+          linksHtml = '<div class="flex flex-wrap gap-3 pt-2">' +
+            p.links.map(function (l) {
+              return '<a href="' + l.url + '" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-gradient-to-r from-lava-500 to-crimson-500 text-white font-mono text-xs font-semibold uppercase tracking-wider hover:opacity-95 transition">' + l.label + '</a>';
+            }).join('') +
+          '</div>';
+        }
+
+        projModalBody.innerHTML =
+          '<div class="space-y-2">' +
+            '<div class="flex flex-wrap items-center gap-2">' +
+              '<span class="text-xs font-mono text-lava-400">' + p.code + '</span>' +
+              '<span class="px-2.5 py-0.5 rounded-full bg-white/10 text-[11px] font-mono text-emerald-300">' + p.status + '</span>' +
+            '</div>' +
+            '<h3 id="modal-proj-title" class="text-2xl sm:text-4xl font-display font-bold text-white">' + p.title + '</h3>' +
+          '</div>' +
+          '<p class="text-sm sm:text-base text-white/80 leading-relaxed">' + p.summary + '</p>' +
+          '<div class="space-y-2.5">' +
+            '<div class="text-xs font-mono uppercase tracking-wider text-white/45">KEY ARCHITECTURE &amp; FACTS:</div>' +
+            '<ul class="space-y-2">' +
+              p.highlights.map(function (h) {
+                return '<li class="flex items-start gap-2.5 text-xs sm:text-sm text-white/75"><span class="text-lava-500 mt-0.5">◆</span><span>' + h + '</span></li>';
+              }).join('') +
+            '</ul>' +
+          '</div>' +
+          extraHtml +
+          '<div>' +
+            '<div class="text-xs font-mono uppercase tracking-wider text-white/45 mb-2">TECHNOLOGY STACK:</div>' +
+            '<div class="flex flex-wrap gap-1.5">' +
+              p.stack.map(function (s) {
+                return '<span class="px-3 py-1 rounded-lg bg-white/[0.06] border border-white/10 text-xs font-mono text-white/85">' + s + '</span>';
+              }).join('') +
+            '</div>' +
+          '</div>' +
+          linksHtml;
+
+        projModal.classList.remove('hidden');
+        projModal.classList.add('flex');
+
+        // Bind FrostClick simulator tap button if present
+        var tapBtn = document.getElementById('btn-frost-tap');
+        var frostScore = 1240;
+        var frostEnergy = 100;
+        if (tapBtn) {
+          tapBtn.addEventListener('click', function () {
+            frostScore += 15;
+            frostEnergy = Math.max(0, frostEnergy - 5);
+            var cEl = document.getElementById('frost-counter');
+            var eEl = document.getElementById('frost-energy-label');
+            if (cEl) cEl.textContent = frostScore.toLocaleString('en-US') + ' ❄️';
+            if (eEl) eEl.textContent = 'ENERGY: ' + frostEnergy + '/100';
+          });
+        }
+      }
+
+      document.querySelectorAll('[data-open-project]').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          openProjectModal(btn.getAttribute('data-open-project'));
+        });
+      });
+
+      document.querySelectorAll('[data-proj-card]').forEach(function (card) {
+        card.addEventListener('click', function () {
+          openProjectModal(card.getAttribute('data-proj-card'));
+        });
+      });
+
+      if (btnCloseProjModal) {
+        btnCloseProjModal.addEventListener('click', function () {
+          projModal.classList.add('hidden');
+          projModal.classList.remove('flex');
+        });
+      }
+
+      // --- 11. Socials Filtering ---
+      document.querySelectorAll('.soc-filter-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var filter = btn.getAttribute('data-soc-filter');
+          document.querySelectorAll('.soc-filter-btn').forEach(function (b) {
+            b.className = 'soc-filter-btn px-3 py-1.5 rounded-xl text-xs font-mono bg-white/[0.05] text-white/70 hover:text-white border border-white/10 transition';
+          });
+          btn.className = 'soc-filter-btn px-3 py-1.5 rounded-xl text-xs font-mono bg-lava-500 text-white font-semibold transition';
+
+          document.querySelectorAll('.social-card').forEach(function (card) {
+            var cat = card.getAttribute('data-soc-cat');
+            if (filter === 'all' || cat === filter) {
+              card.classList.remove('hidden');
+              card.classList.add('flex');
+            } else {
+              card.classList.add('hidden');
+              card.classList.remove('flex');
+            }
+          });
+        });
+      });
+
+      // --- 12. Crypto Wallets Copy & Deterministic QR Code Generator ---
+      document.querySelectorAll('[data-copy-wallet]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var addr = btn.getAttribute('data-copy-wallet');
+          var label = btn.getAttribute('data-wallet-label');
+          copyTextToClipboard(addr, label);
+          var span = btn.querySelector('span');
+          if (span) {
+            var orig = span.textContent;
+            span.textContent = 'COPIED ✓';
+            setTimeout(function () { span.textContent = orig; }, 1800);
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-copy-text]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var txt = btn.getAttribute('data-copy-text');
+          copyTextToClipboard(txt, 'Contact');
+        });
+      });
+
+      var qrModal = document.getElementById('qr-modal');
+      var btnCloseQr = document.getElementById('btn-close-qr-modal');
+      var btnQrCopy = document.getElementById('btn-qr-copy');
+      var activeQrAddress = '';
+
+      function renderWalletQr(title, net, addr) {
+        activeQrAddress = addr;
+        document.getElementById('qr-modal-title').textContent = title;
+        document.getElementById('qr-modal-net').textContent = net;
+        document.getElementById('qr-modal-addr').textContent = addr;
+
+        var box = document.getElementById('qr-code-box');
+        box.innerHTML = '';
+        if (typeof qrcode === 'function') {
+          try {
+            var qr = qrcode(0, 'M');
+            qr.addData(addr);
+            qr.make();
+            box.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 2, scalable: true });
+            var svg = box.querySelector('svg');
+            if (svg) {
+              svg.setAttribute('width', '192');
+              svg.setAttribute('height', '192');
+            }
+          } catch (err) {
+            box.innerHTML = '<div class="text-xs font-mono text-black p-2 break-all">' + addr + '</div>';
+          }
+        } else {
+          box.innerHTML = '<div class="text-xs font-mono text-black p-2 break-all">' + addr + '</div>';
+        }
+
+        qrModal.classList.remove('hidden');
+        qrModal.classList.add('flex');
+      }
+
+      document.querySelectorAll('[data-qr-open]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          renderWalletQr(
+            btn.getAttribute('data-qr-open'),
+            btn.getAttribute('data-qr-net'),
+            btn.getAttribute('data-qr-addr')
+          );
+        });
+      });
+
+      if (btnCloseQr) {
+        btnCloseQr.addEventListener('click', function () {
+          qrModal.classList.add('hidden');
+          qrModal.classList.remove('flex');
+        });
+      }
+
+      if (btnQrCopy) {
+        btnQrCopy.addEventListener('click', function () {
+          if (activeQrAddress) copyTextToClipboard(activeQrAddress, 'Wallet');
+        });
+      }
+
+      // Close modals on backdrop click or Escape
+      window.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          if (projModal) { projModal.classList.add('hidden'); projModal.classList.remove('flex'); }
+          if (qrModal) { qrModal.classList.add('hidden'); qrModal.classList.remove('flex'); }
+        }
+      });
+
+      [projModal, qrModal].forEach(function (m) {
+        if (!m) return;
+        m.addEventListener('click', function (e) {
+          if (e.target === m) {
+            m.classList.add('hidden');
+            m.classList.remove('flex');
+          }
+        });
+      });
+
+      // --- 13. Contact Composer & Direct Dispatch ---
+      var btnFocusComposer = document.getElementById('btn-focus-composer');
+      var senderName = document.getElementById('sender-name');
+      var senderTopic = document.getElementById('sender-topic');
+      var senderMsg = document.getElementById('sender-msg');
+      var contactForm = document.getElementById('contact-dispatch-form');
+      var btnSendEmail = document.getElementById('btn-send-email');
+
+      if (btnFocusComposer && senderName) {
+        btnFocusComposer.addEventListener('click', function () {
+          senderName.focus();
+          showToast('Форма связи активна', 'Заполните сообщение для отправки в Telegram или по Email');
+        });
+      }
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var name = (senderName && senderName.value.trim()) || 'Visitor';
+          var topic = (senderTopic && senderTopic.value) || 'Project Inquiry';
+          var msg = (senderMsg && senderMsg.value.trim()) || 'Hello!';
+          var fullText = 'Привет, Йосеф-Исроэль! Меня зовут ' + name + ' (' + topic + '). ' + msg;
+          copyTextToClipboard(fullText, 'Сообщение скопировано');
+          window.open('https://t.me/YOSSI_LIVE', '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      if (btnSendEmail) {
+        btnSendEmail.addEventListener('click', function () {
+          var name = (senderName && senderName.value.trim()) || 'Visitor';
+          var topic = (senderTopic && senderTopic.value) || 'Project Inquiry';
+          var msg = (senderMsg && senderMsg.value.trim()) || '';
+          var subject = encodeURIComponent('[TEITELBAUM.RU] ' + topic + ' — ' + name);
+          var body = encodeURIComponent('Имя / Проект: ' + name + '\nТема: ' + topic + '\n\nСообщение:\n' + msg);
+          window.location.href = 'mailto:Yosef-Isroel@PicaDon.ru?subject=' + subject + '&body=' + body;
+          showToast('Открытие почтового клиента', 'Yosef-Isroel@PicaDon.ru');
+        });
+      }
+
+      // --- 14. Mobile Navigation Sheet ---
+      var btnMobileMenu = document.getElementById('btn-mobile-menu');
+      var mobileSheet = document.getElementById('mobile-menu-sheet');
+      var iconOpen = document.getElementById('icon-menu-open');
+      var iconClose = document.getElementById('icon-menu-close');
+
+      if (btnMobileMenu && mobileSheet) {
+        btnMobileMenu.addEventListener('click', function () {
+          var isHidden = mobileSheet.classList.toggle('hidden');
+          btnMobileMenu.setAttribute('aria-expanded', String(!isHidden));
+          if (iconOpen && iconClose) {
+            iconOpen.classList.toggle('hidden', !isHidden);
+            iconClose.classList.toggle('hidden', isHidden);
+          }
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            mobileSheet.classList.add('hidden');
+            if (iconOpen && iconClose) {
+              iconOpen.classList.remove('hidden');
+              iconClose.classList.add('hidden');
+            }
+          });
+        });
+      }
+
+      // --- 15. Bilingual Switcher (RU / EN) ---
+      var currentLang = 'ru';
+      var i18nDict = {
+        ru: {
+          nav_about: 'Обо мне',
+          nav_projects: 'Проекты',
+          nav_socials: 'Соцсети',
+          nav_support: 'Поддержка',
+          nav_contact: 'Контакт',
+          btn_assemble: '▶ Сборка UI',
+          hero_eyebrow: 'ПЕРСОНАЛЬНЫЙ ЦИФРОВОЙ БРЕНД & ТЕХНОЛОГИИ',
+          hero_mode_label: 'РЕЖИМ ЗАГОЛОВКА:',
+          hero_desc: 'Персональное цифровое пространство Йосефа-Исроэля Тейтельбаума. Разработка комплексных IT-решений, эксперименты с искусственным интеллектом, экосистема проектов PicaDon, Telegram Mini Apps и кастомная сетевая инфраструктура.',
+          hero_btn_explore: 'EXPLORE MY WORK',
+          hero_btn_contact: 'GET IN TOUCH',
+          hero_replay_scene: 'Live Сцена',
+          portrait_role: 'Tech & Hardware Entrepreneur • Создатель PicaDon',
+          scroll_explore: 'ПРОКРУТИТЕ ДЛЯ ИЗУЧЕНИЯ ЦИФРОВОГО ПРОСТРАНСТВА',
+          about_title: 'ОБО МНЕ — ЧЕСТНАЯ САМОПРЕЗЕНТАЦИЯ',
+          about_manifesto_tag: 'Без вымышленных регалий и шаблонных резюме. Реальные продукты, собственные серверы, эксперименты с ИИ и работающее железо.',
+          about_p1: 'Я создаю цифровые продукты, медийные проекты и собственную сетевую инфраструктуру на стыке современных веб-технологий, генеративного искусственного интеллекта и аппаратной кастомизации. Мой главный принцип — проверять идеи практикой: от идеи и визуального интерфейса до настройки Linux-серверов, прошивки роутеров OpenWrt и запуска живых ботов в Telegram и MAX.',
+          about_p2: 'Вместо сухих корпоративных титулов я фокусируюсь на развитии собственной экосистемы PicaDon, тестировании новейших нейросетевых моделей (Gemini, Claude, GPT, Veo), разработке интерактивных Telegram Mini Apps и цифровизации образовательных и общинных инициатив.',
+          projects_title: 'MY PROJECTS — МОИ ПРОЕКТЫ',
+          socials_title: 'MY DIGITAL WORLD — СОЦИАЛЬНЫЕ СЕТИ',
+          support_title: 'SUPPORT MY WORK — ПОДДЕРЖАТЬ ПРОЕКТЫ',
+          support_disclaimer: 'Поддержка полностью добровольная. Все средства направляются на оплату серверов, сетевой инфраструктуры и развитие новых открытых цифровых экспериментов.',
+          contact_subtitle: 'Have an idea, a project or just want to connect? Let\'s talk. Есть идея, проект или просто хотите связаться? Напишите напрямую.'
+        },
+        en: {
+          nav_about: 'About',
+          nav_projects: 'Projects',
+          nav_socials: 'Socials',
+          nav_support: 'Support',
+          nav_contact: 'Contact',
+          btn_assemble: '▶ Replay UI',
+          hero_eyebrow: 'PERSONAL DIGITAL BRAND & CREATIVE TECHNOLOGY',
+          hero_mode_label: 'HEADLINE MODE:',
+          hero_desc: 'Personal digital space of Yosef-Isroel Teitelbaum. Comprehensive IT solutions, generative AI experiments, the PicaDon ecosystem, Telegram Mini Apps, and custom OpenWrt & VPS network infrastructure.',
+          hero_btn_explore: 'EXPLORE MY WORK',
+          hero_btn_contact: 'GET IN TOUCH',
+          hero_replay_scene: 'Live Scene',
+          portrait_role: 'Tech & Hardware Entrepreneur • Creator of PicaDon',
+          scroll_explore: 'SCROLL TO EXPLORE DIGITAL SPACE',
+          about_title: 'ABOUT ME — AUTHENTIC SELF-PRESENTATION',
+          about_manifesto_tag: 'Zero fabricated corporate titles or generic templates. Real digital products, self-hosted servers, AI experiments, and custom hardware.',
+          about_p1: 'I build digital products, media channels, and custom network infrastructure at the intersection of modern web interfaces, generative AI, and hardware customization. My core principle is validating ideas through real execution—from Liquid Glass UI design to Ubuntu VPS administration, OpenWrt router firmware, and live bots on Telegram and MAX.',
+          about_p2: 'Instead of inflated corporate titles, I focus on growing the PicaDon ecosystem, experimenting with frontier AI models (Gemini, Claude, GPT, Veo), building interactive Telegram Mini Apps, and digitizing community initiatives.',
+          projects_title: 'MY PROJECTS — SELECTED WORKS',
+          socials_title: 'MY DIGITAL WORLD — SOCIAL NETWORKS',
+          support_title: 'SUPPORT MY WORK — CRYPTO CONTRIBUTIONS',
+          support_disclaimer: 'Support is completely voluntary. Contributions go directly toward independent server infrastructure and new digital experiments.',
+          contact_subtitle: 'Have an idea, a project or just want to connect? Let\'s talk.'
+        }
+      };
+
+      var btnLang = document.getElementById('btn-lang-toggle');
+      var langInd = document.getElementById('lang-indicator');
+      if (btnLang) {
+        btnLang.addEventListener('click', function () {
+          currentLang = currentLang === 'ru' ? 'en' : 'ru';
+          if (langInd) langInd.textContent = currentLang.toUpperCase();
+          var dict = i18nDict[currentLang];
+          document.querySelectorAll('[data-i18n]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n');
+            if (dict[key]) el.textContent = dict[key];
+          });
+          showToast('Language: ' + currentLang.toUpperCase(), currentLang === 'ru' ? 'Интерфейс переключён на русский' : 'Interface switched to English');
+        });
+      }
+
+      // --- 16. IntersectionObserver Scroll Reveal ---
+      var revealItems = document.querySelectorAll('.reveal-item');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+            }
+          });
+        }, { threshold: 0.08 });
+        revealItems.forEach(function (item) { obs.observe(item); });
+      } else {
+        revealItems.forEach(function (item) { item.classList.add('revealed'); });
+      }
+
+    })();
+  </script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teitelbaum.ru/sitemap.xml
+Host: https://teitelbaum.ru
